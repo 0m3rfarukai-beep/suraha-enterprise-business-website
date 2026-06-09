@@ -1,0 +1,20 @@
+{
+  "name": "Suraha Enterprise Ltd.",
+  "short_name": "Suraha",
+  "description": "A UK-registered holding company with diversified interests across real estate, technology, investment, and strategic consultancy.",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#0D1B2E",
+  "background_color": "#0D1B2E",
+  "display": "standalone"
+}

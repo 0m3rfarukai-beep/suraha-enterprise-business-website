@@ -1,0 +1,131 @@
+import { Link } from 'react-router-dom';
+
+export default function Footer() {
+  const currentYear = new Date().getFullYear();
+
+  const navLinks = [
+    { label: 'Home', to: '/' },
+    { label: 'About', to: '/about' },
+    { label: 'Divisions', to: '/divisions' },
+    { label: 'Philosophy', to: '/philosophy' },
+    { label: 'Governance', to: '/governance' },
+    { label: 'Contact', to: '/contact' },
+  ];
+
+  const divisionLinks = [
+    { label: 'Suraha Properties', to: '/divisions' },
+    { label: 'Suraha Digital', to: '/divisions' },
+    { label: 'Suraha Ventures', to: '/divisions' },
+    { label: 'Suraha Advisory', to: '/divisions' },
+  ];
+
+  const companyLinks = [
+    { label: 'Governance', to: '/governance' },
+    { label: 'England & Wales Registration', to: '/governance' },
+    { label: 'Privacy Policy', to: '/privacy' },
+    { label: 'Terms of Use', to: '/terms' },
+  ];
+
+  return (
+    <footer className="bg-navy-deep border-t border-gold/12">
+      <div className="max-w-[1200px] mx-auto px-6 md:px-12 py-16 md:py-20">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-8 mb-14 md:mb-20">
+          {/* Brand column */}
+          <div className="col-span-2 sm:col-span-2 lg:col-span-1">
+            <p className="font-heading text-[20px] md:text-[22px] font-light text-cream tracking-wide mb-3">
+              Suraha{' '}
+              <span className="text-gold italic">Enterprise</span>
+            </p>
+            <p className="font-body font-light text-[13px] text-cream/40 leading-relaxed max-w-[240px] mb-4">
+              Building Tomorrow's Businesses Today.
+            </p>
+            <p className="font-mono text-[8px] sm:text-[9px] tracking-[0.15em] text-cream/30 leading-relaxed">
+              Registered in England & Wales
+            </p>
+          </div>
+
+          {/* Navigation column */}
+          <div>
+            <p className="font-mono text-[8px] sm:text-[9px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-gold mb-5">
+              Navigation
+            </p>
+            <ul className="flex flex-col gap-3">
+              {navLinks.map((link) => (
+                <li key={link.label}>
+                  <Link
+                    to={link.to}
+                    className="font-body text-[12px] text-cream/40 hover:text-cream transition-colors duration-300"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Divisions column */}
+          <div>
+            <p className="font-mono text-[8px] sm:text-[9px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-gold mb-5">
+              Divisions
+            </p>
+            <ul className="flex flex-col gap-3">
+              {divisionLinks.map((link) => (
+                <li key={link.label}>
+                  <Link
+                    to={link.to}
+                    className="font-body text-[12px] text-cream/40 hover:text-cream transition-colors duration-300"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Company / Connect column */}
+          <div className="col-span-2 sm:col-span-1">
+            <p className="font-mono text-[8px] sm:text-[9px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-gold mb-5">
+              Company
+            </p>
+            <ul className="flex flex-col gap-3 mb-8">
+              {companyLinks.map((link) => (
+                <li key={link.label}>
+                  <Link
+                    to={link.to}
+                    className="font-body text-[12px] text-cream/40 hover:text-cream transition-colors duration-300"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <p className="font-mono text-[8px] sm:text-[9px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-gold mb-5">
+              Connect
+            </p>
+            <a
+              href="mailto:enquiries@surahaenterprise.com"
+              className="font-body text-[12px] text-cream/40 hover:text-cream transition-colors duration-300 break-all"
+            >
+              enquiries@surahaenterprise.com
+            </a>
+          </div>
+        </div>
+
+        {/* Bottom bar */}
+        <div className="border-t border-gold/10 pt-7 flex flex-col md:flex-row items-center justify-between gap-3">
+          <p className="font-mono text-[8px] sm:text-[9px] tracking-[0.12em] sm:tracking-[0.15em] text-cream/30 text-center md:text-left">
+            © {currentYear} Suraha Enterprise Ltd. All rights reserved. Registered in England & Wales.
+          </p>
+          <div className="flex items-center gap-6">
+            <Link to="/privacy" className="font-mono text-[8px] sm:text-[9px] tracking-[0.12em] sm:tracking-[0.15em] text-cream/30 hover:text-cream transition-colors duration-300">
+              Privacy Policy
+            </Link>
+            <Link to="/terms" className="font-mono text-[8px] sm:text-[9px] tracking-[0.12em] sm:tracking-[0.15em] text-cream/30 hover:text-cream transition-colors duration-300">
+              Terms of Use
+            </Link>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}
