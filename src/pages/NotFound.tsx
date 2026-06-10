@@ -7,14 +7,14 @@ export default function NotFound() {
   return (
     <section className="bg-cream min-h-[70vh] flex items-center justify-center">
       <div className="max-w-[560px] mx-auto px-6 text-center py-32 md:py-40">
-        <p className="font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.25em] text-gold mb-6">
+        <p className="font-mono text-[11px] sm:text-[12px] uppercase tracking-[0.25em] text-gold mb-6">
           404
         </p>
         <div className="w-14 h-px bg-gold mx-auto mb-10 md:mb-12" />
         <h1 className="font-heading font-light text-[32px] sm:text-[40px] md:text-[48px] text-navy leading-[1.15] mb-6">
           Page not found.
         </h1>
-        <p className="font-body font-light text-[15px] md:text-[16px] leading-relaxed text-navy/60 mb-10 md:mb-12">
+        <p className="font-body text-[16px] md:text-[17px] leading-relaxed text-navy/75 mb-10 md:mb-12">
           The page you are looking for could not be found. It may have been moved, removed, or the URL may be incorrect.
         </p>
         <Link

@@ -30,6 +30,7 @@ export default function Navbar() {
     { label: 'Home', to: '/' },
     { label: 'About', to: '/about' },
     { label: 'Divisions', to: '/divisions' },
+    { label: 'Capabilities', to: '/capabilities' },
     { label: 'Philosophy', to: '/philosophy' },
     { label: 'Governance', to: '/governance' },
     { label: 'Contact', to: '/contact' },
@@ -60,13 +61,13 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Nav */}
-        <div className="hidden lg:flex items-center gap-7 xl:gap-9">
+        <div className="hidden lg:flex items-center gap-5 xl:gap-8">
           {navLinks.map((link) => (
             <Link
               key={link.to}
               to={link.to}
               className={`font-mono text-[11px] uppercase tracking-[0.16em] xl:tracking-[0.18em] transition-colors duration-300 relative group py-1 ${
-                isActive(link.to) ? 'text-gold' : 'text-cream/55 hover:text-gold'
+                isActive(link.to) ? 'text-gold' : 'text-cream/75 hover:text-gold'
               }`}
             >
               {link.label}
@@ -80,7 +81,7 @@ export default function Navbar() {
         {/* CTA */}
         <Link
           to="/contact"
-          className="hidden lg:inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.2em] text-gold hover:text-gold-light transition-colors duration-300 group shrink-0"
+          className="hidden xl:inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.2em] text-gold hover:text-gold-light transition-colors duration-300 group shrink-0"
         >
           Enquire
           <span className="inline-block transition-transform duration-300 group-hover:translate-x-1" aria-hidden="true">→</span>
@@ -113,8 +114,8 @@ export default function Navbar() {
               key={link.to}
               to={link.to}
               onClick={() => setMobileOpen(false)}
-              className={`font-mono text-[11px] uppercase tracking-[0.2em] transition-colors duration-300 py-0.5 ${
-                isActive(link.to) ? 'text-gold' : 'text-cream/55 hover:text-gold'
+              className={`font-mono text-[11px] uppercase tracking-[0.2em] transition-colors duration-300 py-2 ${
+                isActive(link.to) ? 'text-gold' : 'text-cream/75 hover:text-gold'
               }`}
             >
               {link.label}

@@ -1,7 +1,9 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import { Landmark, Code2, ShoppingBag, Ship } from 'lucide-react';
 
 interface Division {
+  icon: typeof Landmark;
   tag: string;
   name: string;
   description: string;
@@ -9,21 +11,25 @@ interface Division {
 
 const divisions: Division[] = [
   {
+    icon: Landmark,
     tag: 'Head Office',
     name: 'Suraha Enterprise',
     description: 'The group head office and holding company — setting strategy, upholding governance, and providing the capital discipline and shared infrastructure behind every division.',
   },
   {
+    icon: Code2,
     tag: 'Technology',
     name: 'Suraha Digital',
     description: 'IT services, software development, web platforms, and digital infrastructure — built for the group\'s own ventures and for commercial clients who value substance over hype.',
   },
   {
+    icon: ShoppingBag,
     tag: 'Commerce',
     name: 'Suraha Commerce',
     description: 'The group\'s online retail and eCommerce division — operating direct-to-consumer channels and digital storefronts with retail discipline and honest customer dealing.',
   },
   {
+    icon: Ship,
     tag: 'Trade',
     name: 'Suraha Trade',
     description: 'Wholesale, import/export, and business-to-business supply — long-term trading relationships built on consistent quality, honest terms, and dependable delivery.',
@@ -47,18 +53,23 @@ function DivisionCard({ division, index }: { division: Division; index: number }
           <div className="h-full bg-gold transition-all duration-500 ease-out w-0 group-hover:w-full" />
         </div>
 
-        {/* Sector tag */}
-        <p className="font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-gold mb-5 md:mb-6">
-          {division.tag}
-        </p>
+        {/* Icon + sector tag */}
+        <div className="flex items-center justify-between mb-5 md:mb-6">
+          <p className="font-mono text-[11px] sm:text-[12px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-gold">
+            {division.tag}
+          </p>
+          <span className="inline-flex items-center justify-center w-9 h-9 border border-gold/25 rounded-full transition-colors duration-300 group-hover:border-gold/50" aria-hidden="true">
+            <division.icon size={17} strokeWidth={1.5} className="text-gold" />
+          </span>
+        </div>
 
         {/* Division name */}
-        <h3 className="font-heading font-light text-[22px] sm:text-[24px] md:text-[27px] text-navy mb-3 md:mb-4 leading-tight">
+        <h3 className="font-heading font-normal text-[22px] sm:text-[24px] md:text-[27px] text-navy mb-3 md:mb-4 leading-tight">
           {division.name}
         </h3>
 
         {/* Description */}
-        <p className="font-body font-light text-[14px] leading-[1.7] text-navy/60 mb-6 md:mb-8">
+        <p className="font-body text-[15px] leading-[1.7] text-navy/75 mb-6 md:mb-8">
           {division.description}
         </p>
 
@@ -85,7 +96,7 @@ export default function Portfolio() {
           transition={{ duration: 0.7, ease: [0.22, 0.61, 0.36, 1] }}
         >
           {/* Eyebrow */}
-          <p className="font-mono text-[10px] sm:text-[11px] md:text-[12px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-gold mb-6">
+          <p className="font-mono text-[11px] sm:text-[12px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-gold mb-6">
             // The Group
           </p>
 
@@ -103,6 +114,17 @@ export default function Portfolio() {
           {divisions.map((division, i) => (
             <DivisionCard key={division.tag} division={division} index={i} />
           ))}
+        </div>
+
+        {/* Capabilities link */}
+        <div className="mt-10 md:mt-12">
+          <Link
+            to="/capabilities"
+            className="inline-flex items-center gap-2 font-mono text-[12px] uppercase tracking-[0.2em] text-gold hover:text-gold-light transition-colors duration-300 group"
+          >
+            View Group Capabilities
+            <span className="inline-block transition-transform duration-300 group-hover:translate-x-0.5" aria-hidden="true">→</span>
+          </Link>
         </div>
       </div>
     </section>

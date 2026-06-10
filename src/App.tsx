@@ -6,6 +6,7 @@ import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
 import About from './pages/About';
 import Divisions from './pages/Divisions';
+import Capabilities from './pages/Capabilities';
 import Philosophy from './pages/Philosophy';
 import Governance from './pages/Governance';
 import Contact from './pages/Contact';
@@ -20,13 +21,15 @@ export default function App() {
   return (
     <MotionConfig reducedMotion="user">
     <div className="min-h-screen flex flex-col">
+      <a href="#main-content" className="skip-link">Skip to content</a>
       <ScrollToTop />
       <Navbar />
-      <main className="flex-1">
+      <main id="main-content" className="flex-1">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/divisions" element={<Divisions />} />
+          <Route path="/capabilities" element={<Capabilities />} />
           <Route path="/philosophy" element={<Philosophy />} />
           <Route path="/governance" element={<Governance />} />
           <Route path="/contact" element={<Contact />} />

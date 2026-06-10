@@ -25,7 +25,7 @@ export default function Stats() {
               <p className="font-heading font-light text-[48px] md:text-[72px] text-gold leading-none mb-3 relative z-10">
                 {stat.number}
               </p>
-              <p className="font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-navy/60 relative z-10">
+              <p className="font-mono text-[11px] sm:text-[12px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-navy/75 relative z-10">
                 {stat.label}
               </p>
             </motion.div>

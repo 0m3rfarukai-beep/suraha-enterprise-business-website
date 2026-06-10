@@ -1,3 +1,4 @@
+import { Handshake, Layers, Truck, Code2 } from 'lucide-react';
 import PageHero from '../components/PageHero';
 import SectionHeader from '../components/SectionHeader';
 import CTAButton from '../components/CTAButton';
@@ -5,18 +6,22 @@ import { usePageTitle } from '../hooks/usePageTitle';
 
 const enquiryTypes = [
   {
+    icon: Handshake,
     title: 'Strategic Partnerships',
     body: 'Joint ventures and long-term commercial partnerships aligned with the group\'s focus on technology, commerce, and trade.',
   },
   {
+    icon: Layers,
     title: 'Division Enquiries',
     body: 'Propositions relevant to Suraha Digital, Suraha Commerce, or Suraha Trade.',
   },
   {
+    icon: Truck,
     title: 'Supplier & Trade Relationships',
     body: 'Manufacturers, suppliers, and distributors seeking dependable wholesale, import/export, or B2B supply arrangements.',
   },
   {
+    icon: Code2,
     title: 'Technology Engagements',
     body: 'Organisations seeking well-built software, web platforms, or digital infrastructure delivered with commercial discipline.',
   },
@@ -56,7 +61,7 @@ export default function Contact() {
       <PageHero
         eyebrow="Contact"
         heading={<>Let's start a <span className="italic text-gold">conversation</span>.</>}
-        subtitle="We welcome approaches from institutional partners, family offices, and businesses that share our long-term orientation."
+        subtitle="We welcome approaches from suppliers, commercial partners, and businesses that share our long-term orientation."
       />
 
       {/* Partnership Enquiry */}
@@ -67,10 +72,10 @@ export default function Contact() {
             heading={<>Open to <span className="italic text-gold">considered</span> dialogue.</>}
           />
           <div className="mt-8 md:mt-10 max-w-[680px] space-y-5">
-            <p className="font-body font-light text-[15px] md:text-[16px] leading-relaxed text-navy/70">
+            <p className="font-body text-[16px] md:text-[17px] leading-relaxed text-navy/80">
               Whether you represent a potential supplier, a technology engagement, a trading relationship, or a long-term commercial partnership — we are open to considered dialogue.
             </p>
-            <p className="font-body font-light text-[15px] md:text-[16px] leading-relaxed text-navy/70">
+            <p className="font-body text-[16px] md:text-[17px] leading-relaxed text-navy/80">
               We review every enquiry personally and respond to every approach, regardless of outcome. We value the time and consideration that goes into a well-crafted approach, and we extend the same courtesy in return.
             </p>
           </div>
@@ -87,13 +92,18 @@ export default function Contact() {
           <div className="mt-12 md:mt-16 grid grid-cols-1 sm:grid-cols-2 gap-px bg-gold/10 border border-gold/10 rounded-[2px]">
             {enquiryTypes.map((type, i) => (
               <div key={i} className="bg-cream-dark p-8 md:p-10">
-                <p className="font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-gold mb-4">
-                  0{i + 1}
-                </p>
-                <h3 className="font-heading font-light text-[20px] md:text-[22px] text-navy leading-tight mb-3">
+                <div className="flex items-center justify-between mb-4">
+                  <p className="font-mono text-[11px] sm:text-[12px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-gold">
+                    0{i + 1}
+                  </p>
+                  <span className="inline-flex items-center justify-center w-9 h-9 border border-gold/25 rounded-full" aria-hidden="true">
+                    <type.icon size={17} strokeWidth={1.5} className="text-gold" />
+                  </span>
+                </div>
+                <h3 className="font-heading font-normal text-[20px] md:text-[22px] text-navy leading-tight mb-3">
                   {type.title}
                 </h3>
-                <p className="font-body font-light text-[14px] md:text-[15px] leading-relaxed text-navy/55">
+                <p className="font-body text-[15px] md:text-[16px] leading-relaxed text-navy/70">
                   {type.body}
                 </p>
               </div>
@@ -121,8 +131,8 @@ export default function Contact() {
                       i < reviewCriteria.length - 1 ? 'border-b border-gold/10' : ''
                     }`}
                   >
-                    <span className="font-mono text-[9px] sm:text-[10px] text-gold/50 mt-0.5 shrink-0">0{i + 1}</span>
-                    <p className="font-body font-light text-[14px] md:text-[15px] leading-relaxed text-navy/65">
+                    <span className="font-mono text-[11px] text-gold/50 mt-0.5 shrink-0">0{i + 1}</span>
+                    <p className="font-body text-[15px] md:text-[16px] leading-relaxed text-navy/80">
                       {criterion}
                     </p>
                   </div>
@@ -151,7 +161,7 @@ export default function Contact() {
                 <h3 className="font-heading font-light text-[18px] md:text-[20px] text-cream leading-tight mb-3">
                   {step.title}
                 </h3>
-                <p className="font-body font-light text-[14px] md:text-[15px] leading-relaxed text-cream/45">
+                <p className="font-body text-[15px] md:text-[16px] leading-relaxed text-cream/65">
                   {step.body}
                 </p>
               </div>
@@ -165,17 +175,17 @@ export default function Contact() {
         <div className="absolute inset-4 sm:inset-8 md:inset-12 lg:inset-16 border border-gold/12 pointer-events-none rounded-[2px]" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[radial-gradient(ellipse_at_center,_rgba(196,154,56,0.06)_0%,_transparent_70%)] pointer-events-none" />
         <div className="max-w-[600px] mx-auto px-6 md:px-12 text-center relative z-10">
-          <p className="font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-gold mb-6">
+          <p className="font-mono text-[11px] sm:text-[12px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-gold mb-6">
             Get In Touch
           </p>
           <h2 className="font-heading font-light text-[24px] sm:text-[32px] md:text-[40px] lg:text-[46px] text-cream leading-[1.15] mb-5 md:mb-7">
             enquiries@surahaenterprise.com
           </h2>
-          <p className="font-body font-light text-[14px] md:text-[15px] leading-relaxed text-cream/50 max-w-[420px] mx-auto mb-8 md:mb-10">
+          <p className="font-body text-[15px] md:text-[16px] leading-relaxed text-cream/70 max-w-[420px] mx-auto mb-8 md:mb-10">
             Submit a brief overview of your proposition. We review every enquiry personally and respond to every approach.
           </p>
           <CTAButton href="mailto:enquiries@surahaenterprise.com">Send an Enquiry</CTAButton>
-          <p className="font-mono text-[9px] sm:text-[10px] uppercase tracking-[0.15em] sm:tracking-[0.2em] text-cream/25 mt-6">
+          <p className="font-mono text-[11px] uppercase tracking-[0.15em] sm:tracking-[0.2em] text-cream/50 mt-6">
             All enquiries treated in strict confidence
           </p>
         </div>

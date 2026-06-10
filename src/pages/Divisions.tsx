@@ -76,7 +76,7 @@ export default function Divisions() {
               {/* Left — tag + name */}
               <div className="lg:col-span-4">
                 <Reveal>
-                  <p className="font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-gold mb-3">
+                  <p className="font-mono text-[11px] sm:text-[12px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-gold mb-3">
                     {div.tag}
                   </p>
                   <h2 className="font-heading font-light text-[26px] sm:text-[30px] md:text-[36px] text-navy leading-tight">
@@ -90,7 +90,7 @@ export default function Divisions() {
                 <Reveal delay={0.1}>
                   <div className="space-y-5 mb-8">
                     {div.paragraphs.map((p, pi) => (
-                      <p key={pi} className="font-body font-light text-[15px] md:text-[16px] leading-[1.75] text-navy/70">
+                      <p key={pi} className="font-body text-[16px] md:text-[17px] leading-[1.75] text-navy/80">
                         {p}
                       </p>
                     ))}
@@ -101,7 +101,7 @@ export default function Divisions() {
                     {div.focus.map((item) => (
                       <span
                         key={item}
-                        className="inline-block px-3.5 py-1.5 border border-gold/20 font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.15em] sm:tracking-[0.2em] text-navy/55 rounded-[2px]"
+                        className="inline-block px-3.5 py-1.5 border border-gold/20 font-mono text-[11px] sm:text-[12px] uppercase tracking-[0.15em] sm:tracking-[0.2em] text-navy/70 rounded-[2px]"
                       >
                         {item}
                       </span>
@@ -134,13 +134,13 @@ export default function Divisions() {
           />
           <Reveal delay={0.1}>
             <div className="mt-8 md:mt-10 max-w-[700px] space-y-5">
-              <p className="font-body font-light text-[15px] md:text-[16px] leading-[1.75] text-cream/55">
+              <p className="font-body text-[16px] md:text-[17px] leading-[1.75] text-cream/75">
                 The divisions of Suraha Enterprise are not isolated silos. They are complementary capabilities, each reinforcing the others through shared infrastructure, commercial insight, and institutional knowledge.
               </p>
-              <p className="font-body font-light text-[15px] md:text-[16px] leading-[1.75] text-cream/55">
+              <p className="font-body text-[16px] md:text-[17px] leading-[1.75] text-cream/75">
                 Suraha Digital builds and maintains the platforms on which the group's commerce operations run. Suraha Trade secures the supply relationships that feed Suraha Commerce. And the head office holds all three to a single standard of governance, capital discipline, and long-term intent.
               </p>
-              <p className="font-body font-light text-[15px] md:text-[16px] leading-[1.75] text-cream/55">
+              <p className="font-body text-[16px] md:text-[17px] leading-[1.75] text-cream/75">
                 This integrated approach allows us to move quickly without losing coherence — every division strengthens the others, and the group is more resilient than any single line of business could be alone.
               </p>
             </div>

@@ -27,7 +27,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease }}
-          className="font-mono text-[10px] sm:text-[11px] md:text-[12px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-gold mb-8 md:mb-10"
+          className="font-mono text-[11px] sm:text-[12px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-gold mb-8 md:mb-10"
         >
           Suraha Enterprise Ltd.
         </motion.p>
@@ -50,7 +50,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.28, ease }}
-          className="font-body font-light text-[16px] md:text-[17px] leading-relaxed text-cream/60 max-w-[560px] mx-auto mb-10 md:mb-12"
+          className="font-body text-[16px] md:text-[17px] leading-relaxed text-cream/75 max-w-[560px] mx-auto mb-10 md:mb-12"
         >
           A UK-registered holding company building and operating businesses across technology, commerce, and international trade.
         </motion.p>
@@ -79,8 +79,8 @@ export default function Hero() {
 
       {/* Scroll indicator */}
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-scroll-bounce">
-        <span className="font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.25em] text-cream/30">Scroll</span>
-        <svg width="10" height="16" viewBox="0 0 12 18" fill="none" className="text-cream/30" aria-hidden="true">
+        <span className="font-mono text-[11px] sm:text-[12px] uppercase tracking-[0.25em] text-cream/55">Scroll</span>
+        <svg width="10" height="16" viewBox="0 0 12 18" fill="none" className="text-cream/55" aria-hidden="true">
           <path d="M6 1V17M6 17L1 12M6 17L11 12" stroke="currentColor" strokeWidth="1" />
         </svg>
       </div>

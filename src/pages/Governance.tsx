@@ -45,20 +45,20 @@ export default function Governance() {
                 heading={<>Registered in <span className="italic text-gold">England</span> & Wales.</>}
               />
               <div className="mt-8 md:mt-10 space-y-5">
-                <p className="font-body font-light text-[15px] md:text-[16px] leading-[1.7] text-navy/70">
+                <p className="font-body text-[16px] md:text-[17px] leading-[1.7] text-navy/80">
                   Suraha Enterprise Ltd. is registered in England & Wales.
                 </p>
-                <p className="font-body font-light text-[15px] md:text-[16px] leading-[1.7] text-navy/70">
+                <p className="font-body text-[16px] md:text-[17px] leading-[1.7] text-navy/80">
                   Our registration reflects a deliberate choice of jurisdiction — one that offers robust corporate governance frameworks, the rule of law, and international credibility. The United Kingdom's legal and regulatory environment provides the transparency and accountability that our stakeholders expect and deserve.
                 </p>
-                <p className="font-body font-light text-[15px] md:text-[16px] leading-[1.7] text-navy/70">
+                <p className="font-body text-[16px] md:text-[17px] leading-[1.7] text-navy/80">
                   We are committed to maintaining the highest standards of corporate conduct, consistent with the expectations placed upon UK-registered enterprises operating across multiple sectors and jurisdictions.
                 </p>
               </div>
             </div>
             <div className="lg:col-span-5">
               <div className="border border-gold/15 p-8 md:p-10 rounded-[2px]">
-                <p className="font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-gold mb-8">
+                <p className="font-mono text-[11px] sm:text-[12px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-gold mb-8">
                   Company Details
                 </p>
                 <div className="space-y-0">
@@ -69,17 +69,17 @@ export default function Governance() {
                         i < details.length - 1 ? 'border-b border-gold/10' : ''
                       }`}
                     >
-                      <span className="font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.15em] sm:tracking-[0.2em] text-navy/45">
+                      <span className="font-mono text-[11px] sm:text-[12px] uppercase tracking-[0.15em] sm:tracking-[0.2em] text-navy/60">
                         {d.label}
                       </span>
-                      <span className="font-body text-[14px] md:text-[15px] text-navy/70 text-right">
+                      <span className="font-body text-[15px] md:text-[16px] text-navy/80 text-right">
                         {d.value}
                       </span>
                     </div>
                   ))}
                 </div>
                 <div className="mt-8 pt-6 border-t border-gold/10">
-                  <p className="font-mono text-[9px] sm:text-[10px] uppercase tracking-[0.15em] sm:tracking-[0.2em] text-navy/30 leading-relaxed">
+                  <p className="font-mono text-[11px] uppercase tracking-[0.15em] sm:tracking-[0.2em] text-navy/30 leading-relaxed">
                     Suraha Enterprise Ltd. operates in full compliance with the Companies Act 2006 and all applicable UK regulatory requirements.
                   </p>
                 </div>
@@ -99,13 +99,13 @@ export default function Governance() {
             dark
           />
           <div className="mt-8 md:mt-10 max-w-[680px] space-y-5">
-            <p className="font-body font-light text-[15px] md:text-[16px] leading-[1.7] text-cream/55">
+            <p className="font-body text-[16px] md:text-[17px] leading-[1.7] text-cream/75">
               Suraha Enterprise operates as a private holding company structured around four commercial pillars — a group head office and operating divisions in technology, commerce, and international trade. Each division maintains operational focus while benefiting from the strategic oversight, shared resources, and capital discipline of the group.
             </p>
-            <p className="font-body font-light text-[15px] md:text-[16px] leading-[1.7] text-cream/55">
+            <p className="font-body text-[16px] md:text-[17px] leading-[1.7] text-cream/75">
               Our structure is designed to balance entrepreneurial agility with institutional governance. Divisional leaders have the authority and autonomy to execute within their domains, while the group provides strategic direction, risk management, and capital allocation oversight.
             </p>
-            <p className="font-body font-light text-[15px] md:text-[16px] leading-[1.7] text-cream/55">
+            <p className="font-body text-[16px] md:text-[17px] leading-[1.7] text-cream/75">
               This structure allows us to move with purpose in each sector while maintaining the coherence and discipline of a unified enterprise.
             </p>
           </div>
@@ -122,13 +122,13 @@ export default function Governance() {
           <div className="mt-10 md:mt-14 grid grid-cols-1 md:grid-cols-3 gap-px bg-gold/10 border border-gold/10 rounded-[2px]">
             {compliancePrinciples.map((cp, i) => (
               <div key={i} className="bg-cream p-8 md:p-10">
-                <p className="font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-gold mb-4">
+                <p className="font-mono text-[11px] sm:text-[12px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-gold mb-4">
                   0{i + 1}
                 </p>
-                <h3 className="font-heading font-light text-[20px] md:text-[22px] text-navy leading-tight mb-3">
+                <h3 className="font-heading font-normal text-[20px] md:text-[22px] text-navy leading-tight mb-3">
                   {cp.title}
                 </h3>
-                <p className="font-body font-light text-[14px] md:text-[15px] leading-[1.7] text-navy/55">
+                <p className="font-body text-[15px] md:text-[16px] leading-[1.7] text-navy/70">
                   {cp.body}
                 </p>
               </div>
@@ -145,10 +145,10 @@ export default function Governance() {
             heading={<>Growth with <span className="italic text-gold">intention</span>.</>}
           />
           <div className="mt-8 md:mt-10 max-w-[720px] space-y-5">
-            <p className="font-body font-light text-[15px] md:text-[16px] leading-[1.7] text-navy/70">
-              Growth at Suraha Enterprise is pursued responsibly — with due regard for risk, sustainability, and the long-term health of our portfolio. We do not pursue growth for its own sake, and we do not accept growth that compromises our governance principles or our commitment to enduring value.
+            <p className="font-body text-[16px] md:text-[17px] leading-[1.7] text-navy/80">
+              Growth at Suraha Enterprise is pursued responsibly — with due regard for risk, sustainability, and the long-term health of the group. We do not pursue growth for its own sake, and we do not accept growth that compromises our governance principles or our commitment to enduring value.
             </p>
-            <p className="font-body font-light text-[15px] md:text-[16px] leading-[1.7] text-navy/70">
+            <p className="font-body text-[16px] md:text-[17px] leading-[1.7] text-navy/80">
               Responsible growth means making deliberate choices about where and how we expand. It means entering new sectors only when we have genuine expertise and conviction. It means scaling operations at a pace that preserves quality and culture. And it means ensuring that every new commitment strengthens, rather than dilutes, the enterprise as a whole.
             </p>
           </div>
@@ -163,14 +163,14 @@ export default function Governance() {
             heading={<>Clarity as a <span className="italic text-gold">discipline</span>.</>}
           />
           <div className="mt-8 md:mt-10 max-w-[720px] space-y-5">
-            <p className="font-body font-light text-[15px] md:text-[16px] leading-[1.7] text-navy/70">
+            <p className="font-body text-[16px] md:text-[17px] leading-[1.7] text-navy/80">
               Our stakeholders receive clear, honest, and timely reporting on performance, risk, and strategic direction. We do not obscure difficult realities or inflate interim results. Our reporting reflects the same long-term perspective that guides our decision-making.
             </p>
-            <p className="font-body font-light text-[15px] md:text-[16px] leading-[1.7] text-navy/70">
+            <p className="font-body text-[16px] md:text-[17px] leading-[1.7] text-navy/80">
               Transparency is not merely a disclosure obligation — it is a strategic advantage. It builds trust with partners, attracts like-minded collaborators, and ensures that our decision-making remains grounded in reality rather than narrative.
             </p>
-            <p className="font-body font-light text-[15px] md:text-[16px] leading-[1.7] text-navy/70">
-              We report on what matters: the operational health of our divisions, the strategic trajectory of our portfolio, and the risks and opportunities we see on the horizon.
+            <p className="font-body text-[16px] md:text-[17px] leading-[1.7] text-navy/80">
+              We report on what matters: the operational health of our divisions, the strategic trajectory of the group, and the risks and opportunities we see on the horizon.
             </p>
           </div>
         </div>

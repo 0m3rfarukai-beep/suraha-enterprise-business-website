@@ -7,20 +7,20 @@ const principles = [
     number: '01',
     title: 'Patient Capital',
     body: 'We deploy capital with a multi-year horizon, allowing businesses the time and stability to build enduring competitive advantages. Short-term optimisation is not our discipline.',
-    extended: 'In a market environment that increasingly rewards speed and immediacy, we choose patience. We believe that the most valuable businesses — those with genuine defensible positions and sustainable growth trajectories — are built over years, not months. Our capital structure and private ownership allow us to make commitments that time-starved investors cannot.',
+    extended: 'In a market environment that increasingly rewards speed and immediacy, we choose patience. We believe that the most valuable businesses — those with genuine defensible positions and sustainable growth trajectories — are built over years, not months. Our capital structure and private ownership allow us to make commitments that short-term operators cannot.',
     extended2: 'Patient capital does not mean passive capital. We are actively engaged with the businesses we back, contributing strategic oversight and operational support. But we provide the most valuable resource a growing business can have: time to execute without the pressure of premature optimisation.',
   },
   {
     number: '02',
     title: 'Disciplined Diversification',
     body: 'Our pillars — technology, commerce, and trade — provide structural resilience, but each operates with focused intent. We diversify to protect — never to dilute.',
-    extended: 'Every business we enter is chosen because we have genuine conviction in its long-term potential, not because it fills a gap in our portfolio. We would rather have four deeply understood positions than twenty superficial ones. Our diversification is strategic, not decorative.',
+    extended: 'Every business we enter is chosen because we have genuine conviction in its long-term potential, not because it fills a gap in the group. We would rather have four deeply understood positions than twenty superficial ones. Our diversification is strategic, not decorative.',
     extended2: 'This discipline extends to how we allocate attention and resources within each division. Focus creates depth, and depth creates the kind of commercial insight that drives better decisions over time.',
   },
   {
     number: '03',
     title: 'Operational Alignment',
-    body: 'We take an active interest in the operational trajectory of our portfolio. Where appropriate, we contribute strategic oversight, governance support, and access to our network of institutional relationships.',
+    body: 'We take an active interest in the operational trajectory of our divisions. Where appropriate, we contribute strategic oversight, governance support, and access to our network of institutional relationships.',
     extended: 'Our involvement is calibrated to the needs of each business. Some require hands-on strategic partnership; others benefit from a lighter touch. What remains constant is our commitment to ensuring that operational execution aligns with long-term strategic intent.',
     extended2: 'We believe that good governance and operational rigour are not constraints on growth — they are the foundations upon which sustainable growth is built.',
   },
@@ -55,13 +55,13 @@ export default function Philosophy() {
               </div>
               <div className="lg:col-span-8">
                 <div className="space-y-5">
-                  <p className="font-body font-light text-[15px] md:text-[16px] leading-[1.7] text-navy/70">
+                  <p className="font-body text-[16px] md:text-[17px] leading-[1.7] text-navy/80">
                     {p.body}
                   </p>
-                  <p className="font-body font-light text-[14px] md:text-[15px] leading-[1.7] text-navy/60">
+                  <p className="font-body text-[15px] md:text-[16px] leading-[1.7] text-navy/75">
                     {p.extended}
                   </p>
-                  <p className="font-body font-light text-[14px] md:text-[15px] leading-[1.7] text-navy/60">
+                  <p className="font-body text-[15px] md:text-[16px] leading-[1.7] text-navy/75">
                     {p.extended2}
                   </p>
                 </div>
@@ -81,13 +81,13 @@ export default function Philosophy() {
             dark
           />
           <div className="mt-8 md:mt-10 max-w-[680px] space-y-5">
-            <p className="font-body font-light text-[15px] md:text-[16px] leading-[1.7] text-cream/55">
+            <p className="font-body text-[16px] md:text-[17px] leading-[1.7] text-cream/75">
               Risk management at Suraha Enterprise is not a compliance exercise. It is a strategic discipline embedded in every decision we make.
             </p>
-            <p className="font-body font-light text-[15px] md:text-[16px] leading-[1.7] text-cream/55">
+            <p className="font-body text-[16px] md:text-[17px] leading-[1.7] text-cream/75">
               We evaluate risk through the lens of long-term value preservation, not short-term volatility mitigation. This means we are comfortable with illiquidity and extended time horizons, but we are intolerant of concentrated risks that could permanently impair capital.
             </p>
-            <p className="font-body font-light text-[15px] md:text-[16px] leading-[1.7] text-cream/55">
+            <p className="font-body text-[16px] md:text-[17px] leading-[1.7] text-cream/75">
               Our governance framework ensures that risk decisions are made with full information, appropriate challenge, and clear accountability. Every material commitment is subject to board-level review and rigorous due diligence.
             </p>
           </div>
@@ -102,14 +102,14 @@ export default function Philosophy() {
             heading={<>The measure that <span className="italic text-gold">matters</span>.</>}
           />
           <div className="mt-8 md:mt-10 max-w-[720px] space-y-5">
-            <p className="font-body font-light text-[15px] md:text-[16px] leading-[1.7] text-navy/70">
+            <p className="font-body text-[16px] md:text-[17px] leading-[1.7] text-navy/80">
               Our ultimate measure of success is not the speed of our returns, but the durability of the value we create. We seek to build businesses that can withstand cycles, adapt to change, and compound value over decades.
             </p>
-            <p className="font-body font-light text-[15px] md:text-[16px] leading-[1.7] text-navy/70">
+            <p className="font-body text-[16px] md:text-[17px] leading-[1.7] text-navy/80">
               This philosophy informs every aspect of our enterprise — from the opportunities we pursue to the partners we choose, from the governance we practice to the patience we bring. Long-term value creation is not merely our strategy. It is our identity.
             </p>
-            <p className="font-body font-light text-[15px] md:text-[16px] leading-[1.7] text-navy/70">
-              We believe that businesses built to endure are the most rewarding to own, the most valuable to society, and the most likely to generate exceptional returns over time. This conviction is the foundation of everything we do.
+            <p className="font-body text-[16px] md:text-[17px] leading-[1.7] text-navy/80">
+              We believe that businesses built to endure are the most rewarding to own, the most valuable to society, and the most likely to endure and compound value over time. This conviction is the foundation of everything we do.
             </p>
           </div>
         </div>

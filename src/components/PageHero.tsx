@@ -30,7 +30,7 @@ export default function PageHero({ eyebrow, heading, subtitle }: PageHeroProps) 
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: [0.22, 0.61, 0.36, 1] }}
-          className="font-mono text-[10px] sm:text-[11px] md:text-[12px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-gold mb-6 md:mb-8"
+          className="font-mono text-[11px] sm:text-[12px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-gold mb-6 md:mb-8"
         >
           {eyebrow}
         </motion.p>
@@ -49,7 +49,7 @@ export default function PageHero({ eyebrow, heading, subtitle }: PageHeroProps) 
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.24, ease: [0.22, 0.61, 0.36, 1] }}
-            className="font-body font-light text-[15px] md:text-[16px] leading-relaxed text-cream/55 max-w-[540px] mx-auto"
+            className="font-body text-[16px] md:text-[17px] leading-relaxed text-cream/75 max-w-[540px] mx-auto"
           >
             {subtitle}
           </motion.p>

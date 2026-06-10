@@ -58,10 +58,10 @@ export default function Home() {
                 heading={<>A British enterprise built on <span className="italic text-gold">conviction</span> and capital discipline.</>}
               />
               <div className="mt-8 md:mt-10 space-y-5">
-                <p className="font-body font-light text-[15px] md:text-[16px] leading-[1.7] text-navy/70">
+                <p className="font-body text-[16px] md:text-[17px] leading-[1.7] text-navy/80">
                   Suraha Enterprise Ltd. is a private holding company registered in England & Wales. The group is built on four commercial pillars — a head office providing strategic direction, and operating divisions in technology, commerce, and international trade.
                 </p>
-                <p className="font-body font-light text-[15px] md:text-[16px] leading-[1.7] text-navy/70">
+                <p className="font-body text-[16px] md:text-[17px] leading-[1.7] text-navy/80">
                   Our approach is shaped by patience and conviction. We do not chase trends or pursue scale for its own sake. We build and operate businesses where disciplined execution and long-term orientation can compound value over time.
                 </p>
               </div>
@@ -77,7 +77,7 @@ export default function Home() {
             </div>
             <div className="lg:col-span-5">
               <div className="border border-gold/15 p-8 md:p-10 rounded-[2px]">
-                <p className="font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-gold mb-8">
+                <p className="font-mono text-[11px] sm:text-[12px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-gold mb-8">
                   At a Glance
                 </p>
                 <div className="space-y-0">
@@ -88,10 +88,10 @@ export default function Home() {
                         i < aboutFacts.length - 1 ? 'border-b border-gold/10' : ''
                       }`}
                     >
-                      <span className="font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.15em] sm:tracking-[0.2em] text-navy/45">
+                      <span className="font-mono text-[11px] sm:text-[12px] uppercase tracking-[0.15em] sm:tracking-[0.2em] text-navy/60">
                         {fact.label}
                       </span>
-                      <span className="font-body text-[14px] md:text-[15px] text-navy/70 text-right">
+                      <span className="font-body text-[15px] md:text-[16px] text-navy/80 text-right">
                         {fact.value}
                       </span>
                     </div>
@@ -118,10 +118,10 @@ export default function Home() {
                 <p className="font-heading font-light text-[36px] md:text-[44px] text-gold/20 leading-none mb-5">
                   {p.number}
                 </p>
-                <h3 className="font-heading font-light text-[20px] md:text-[22px] text-cream leading-tight mb-4">
+                <h3 className="font-heading font-normal text-[20px] md:text-[22px] text-cream leading-tight mb-4">
                   {p.title}
                 </h3>
-                <p className="font-body font-light text-[14px] md:text-[15px] leading-[1.7] text-cream/50">
+                <p className="font-body text-[15px] md:text-[16px] leading-[1.7] text-cream/70">
                   {p.body}
                 </p>
               </div>
@@ -146,19 +146,19 @@ export default function Home() {
             eyebrow="// Governance"
             heading={<>Governed by principle. <span className="italic text-gold">Accountable</span> by design.</>}
           />
-          <p className="font-body font-light text-[15px] md:text-[16px] leading-[1.7] text-navy/65 max-w-[600px] mt-8 md:mt-10 mb-12 md:mb-16">
+          <p className="font-body text-[16px] md:text-[17px] leading-[1.7] text-navy/80 max-w-[600px] mt-8 md:mt-10 mb-12 md:mb-16">
             Suraha Enterprise is governed according to the principles of accountability, transparency, and fiduciary responsibility. As a UK-registered company, we operate within the regulatory framework of England & Wales.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-px bg-gold/10 border border-gold/10 rounded-[2px]">
             {governancePreview.map((pillar, i) => (
               <div key={i} className="bg-cream-dark p-8 md:p-10">
-                <p className="font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-gold mb-4">
+                <p className="font-mono text-[11px] sm:text-[12px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-gold mb-4">
                   0{i + 1}
                 </p>
-                <h3 className="font-heading font-light text-[20px] md:text-[22px] text-navy leading-tight mb-3">
+                <h3 className="font-heading font-normal text-[20px] md:text-[22px] text-navy leading-tight mb-3">
                   {pillar.title}
                 </h3>
-                <p className="font-body font-light text-[14px] md:text-[15px] leading-[1.7] text-navy/55">
+                <p className="font-body text-[15px] md:text-[16px] leading-[1.7] text-navy/70">
                   {pillar.body}
                 </p>
               </div>
@@ -185,8 +185,8 @@ export default function Home() {
             Let's start a{' '}
             <span className="italic text-gold">conversation.</span>
           </h2>
-          <p className="font-body font-light text-[15px] md:text-[16px] leading-[1.7] text-cream/50 max-w-[420px] mx-auto mb-8 md:mb-10">
-            Whether you're exploring partnership opportunities, seeking strategic counsel, or interested in our portfolio — we'd welcome the dialogue.
+          <p className="font-body text-[16px] md:text-[17px] leading-[1.7] text-cream/70 max-w-[420px] mx-auto mb-8 md:mb-10">
+            Whether you're exploring partnership opportunities, seeking strategic counsel, or interested in our capabilities — we'd welcome the dialogue.
           </p>
           <CTAButton to="/contact">Get In Touch</CTAButton>
         </div>

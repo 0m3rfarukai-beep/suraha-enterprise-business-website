@@ -17,7 +17,7 @@ export default function SectionHeader({ eyebrow, heading, dark = false, classNam
       viewport={{ once: true, margin: '-60px' }}
       transition={{ duration: 0.7, ease: [0.22, 0.61, 0.36, 1] }}
     >
-      <p className="font-mono text-[10px] sm:text-[11px] md:text-[12px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-gold mb-5 md:mb-6">
+      <p className="font-mono text-[11px] sm:text-[12px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-gold mb-5 md:mb-6">
         {eyebrow}
       </p>
       <div className="w-14 h-px bg-gold mb-8 md:mb-10" />

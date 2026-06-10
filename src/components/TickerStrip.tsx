@@ -12,7 +12,7 @@ export default function TickerStrip() {
 
   const content = items.map((item, i) => (
     <span key={i} className="flex items-center gap-5 sm:gap-6 whitespace-nowrap">
-      <span className="font-mono text-[10px] sm:text-[11px] md:text-[12px] tracking-[0.12em] sm:tracking-[0.15em] text-cream/30 uppercase">
+      <span className="font-mono text-[11px] sm:text-[12px] tracking-[0.12em] sm:tracking-[0.15em] text-cream/55 uppercase">
         {item}
       </span>
       <span className="text-gold/40 text-[6px] sm:text-[8px]" aria-hidden="true">◆</span>

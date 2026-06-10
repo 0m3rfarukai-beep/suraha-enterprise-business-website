@@ -18,7 +18,7 @@ const values = [
   },
   {
     title: 'Stewardship',
-    body: 'We take seriously our responsibility as owners. Every business in our portfolio receives the strategic attention and operational support it needs to endure.',
+    body: 'We take seriously our responsibility as owners. Every business in the group receives the strategic attention and operational support it needs to endure.',
   },
 ];
 
@@ -49,13 +49,13 @@ export default function About() {
             heading={<>A holding company of <span className="italic text-gold">purpose</span> and substance.</>}
           />
           <div className="mt-8 md:mt-10 max-w-[720px] space-y-5">
-            <p className="font-body font-light text-[15px] md:text-[16px] leading-[1.7] text-navy/70">
+            <p className="font-body text-[16px] md:text-[17px] leading-[1.7] text-navy/80">
               Suraha Enterprise Ltd. is a private holding company registered in England & Wales. The group is structured around four commercial pillars — a head office providing strategic direction and governance, and operating divisions in technology, commerce, and international trade.
             </p>
-            <p className="font-body font-light text-[15px] md:text-[16px] leading-[1.7] text-navy/70">
+            <p className="font-body text-[16px] md:text-[17px] leading-[1.7] text-navy/80">
               Our structure is deliberate. Each division operates with focused intent, while the group provides strategic oversight, shared resources, and the capital patience that only a privately held enterprise can offer.
             </p>
-            <p className="font-body font-light text-[15px] md:text-[16px] leading-[1.7] text-navy/70">
+            <p className="font-body text-[16px] md:text-[17px] leading-[1.7] text-navy/80">
               We are not a fund with a mandated exit timeline. We are not a conglomerate chasing scale. We are a holding company that takes disciplined, long-term positions in businesses we understand — and supports them with the patience and rigour they deserve.
             </p>
           </div>
@@ -72,10 +72,10 @@ export default function About() {
             dark
           />
           <div className="mt-8 md:mt-10 max-w-[680px] space-y-5">
-            <p className="font-body font-light text-[15px] md:text-[16px] leading-[1.7] text-cream/55">
+            <p className="font-body text-[16px] md:text-[17px] leading-[1.7] text-cream/75">
               We exist to build and back businesses that create enduring commercial value. Our purpose is not to maximise short-term returns, but to compound long-term worth through disciplined ownership, operational clarity, and strategic patience.
             </p>
-            <p className="font-body font-light text-[15px] md:text-[16px] leading-[1.7] text-cream/55">
+            <p className="font-body text-[16px] md:text-[17px] leading-[1.7] text-cream/75">
               Every decision we make — from the sectors we enter to the partners we choose — is guided by this commitment to lasting value creation. We believe the most resilient businesses are built over years, not quarters, and we structure our approach accordingly.
             </p>
           </div>
@@ -92,13 +92,13 @@ export default function About() {
           <div className="mt-10 md:mt-14 grid grid-cols-1 sm:grid-cols-2 gap-px bg-gold/10 border border-gold/10 rounded-[2px]">
             {values.map((v, i) => (
               <div key={i} className="bg-cream p-8 md:p-10">
-                <p className="font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-gold mb-4">
+                <p className="font-mono text-[11px] sm:text-[12px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-gold mb-4">
                   0{i + 1}
                 </p>
-                <h3 className="font-heading font-light text-[20px] md:text-[22px] text-navy leading-tight mb-3">
+                <h3 className="font-heading font-normal text-[20px] md:text-[22px] text-navy leading-tight mb-3">
                   {v.title}
                 </h3>
-                <p className="font-body font-light text-[14px] md:text-[15px] leading-[1.7] text-navy/55">
+                <p className="font-body text-[15px] md:text-[16px] leading-[1.7] text-navy/70">
                   {v.body}
                 </p>
               </div>
@@ -115,13 +115,13 @@ export default function About() {
             heading={<>Freedom to think in <span className="italic text-gold">decades</span>.</>}
           />
           <div className="mt-8 md:mt-10 max-w-[720px] space-y-5">
-            <p className="font-body font-light text-[15px] md:text-[16px] leading-[1.7] text-navy/70">
+            <p className="font-body text-[16px] md:text-[17px] leading-[1.7] text-navy/80">
               As a privately held enterprise, Suraha Enterprise has the freedom to think beyond the constraints of quarterly reporting and short-term market expectations. This independence is central to our approach.
             </p>
-            <p className="font-body font-light text-[15px] md:text-[16px] leading-[1.7] text-navy/70">
+            <p className="font-body text-[16px] md:text-[17px] leading-[1.7] text-navy/80">
               We take concentrated positions in businesses where we have genuine conviction, and we maintain those positions for as long as the fundamentals remain sound. We do not rotate capital based on market sentiment. We do not pursue opportunistic exits. We invest with intent and hold with discipline.
             </p>
-            <p className="font-body font-light text-[15px] md:text-[16px] leading-[1.7] text-navy/70">
+            <p className="font-body text-[16px] md:text-[17px] leading-[1.7] text-navy/80">
               This long-term orientation benefits not only our enterprise but the businesses we back. It allows management teams to focus on building sustainable competitive advantages rather than meeting near-term targets, and it provides the stability that enduring businesses require.
             </p>
           </div>
@@ -137,7 +137,7 @@ export default function About() {
                 eyebrow="// At a Glance"
                 heading={<>The enterprise in <span className="italic text-gold">summary</span>.</>}
               />
-              <p className="font-body font-light text-[15px] md:text-[16px] leading-[1.7] text-navy/70 mt-8 md:mt-10 max-w-[600px]">
+              <p className="font-body text-[16px] md:text-[17px] leading-[1.7] text-navy/80 mt-8 md:mt-10 max-w-[600px]">
                 Suraha Enterprise operates through a group head office and divisions in technology, commerce, and international trade — each with distinct expertise and a shared commitment to long-term value creation. Our structure provides both focus and resilience.
               </p>
               <div className="mt-8">
@@ -152,7 +152,7 @@ export default function About() {
             </div>
             <div className="lg:col-span-5">
               <div className="border border-gold/15 p-8 md:p-10 rounded-[2px]">
-                <p className="font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-gold mb-8">
+                <p className="font-mono text-[11px] sm:text-[12px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-gold mb-8">
                   Company Facts
                 </p>
                 <div className="space-y-0">
@@ -163,10 +163,10 @@ export default function About() {
                         i < facts.length - 1 ? 'border-b border-gold/10' : ''
                       }`}
                     >
-                      <span className="font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.15em] sm:tracking-[0.2em] text-navy/45">
+                      <span className="font-mono text-[11px] sm:text-[12px] uppercase tracking-[0.15em] sm:tracking-[0.2em] text-navy/60">
                         {fact.label}
                       </span>
-                      <span className="font-body text-[14px] md:text-[15px] text-navy/70 text-right">
+                      <span className="font-body text-[15px] md:text-[16px] text-navy/80 text-right">
                         {fact.value}
                       </span>
                     </div>
