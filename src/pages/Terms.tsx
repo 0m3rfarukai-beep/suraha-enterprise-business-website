@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import PageHero from '../components/PageHero';
 import SectionHeader from '../components/SectionHeader';
 import { usePageTitle } from '../hooks/usePageTitle';
@@ -117,6 +116,9 @@ export default function Terms() {
           >
             enquiries@surahaenterprise.com
           </a>
+          <p className="font-mono text-[8px] sm:text-[9px] uppercase tracking-[0.15em] text-cream/25 mt-8">
+            Suraha Enterprise Ltd. is registered in England &amp; Wales. · Last updated June 2026
+          </p>
         </div>
       </section>
     </>

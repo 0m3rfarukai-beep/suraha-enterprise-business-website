@@ -10,6 +10,9 @@ import Governance from './pages/Governance';
 import Contact from './pages/Contact';
 import Privacy from './pages/Privacy';
 import Terms from './pages/Terms';
+import Cookies from './pages/Cookies';
+import Accessibility from './pages/Accessibility';
+import Disclaimer from './pages/Disclaimer';
 import NotFound from './pages/NotFound';
 
 export default function App() {
@@ -27,6 +30,9 @@ export default function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
+          <Route path="/cookies" element={<Cookies />} />
+          <Route path="/accessibility" element={<Accessibility />} />
+          <Route path="/disclaimer" element={<Disclaimer />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>

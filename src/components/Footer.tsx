@@ -21,9 +21,19 @@ export default function Footer() {
 
   const companyLinks = [
     { label: 'Governance', to: '/governance' },
-    { label: 'England & Wales Registration', to: '/governance' },
     { label: 'Privacy Policy', to: '/privacy' },
     { label: 'Terms of Use', to: '/terms' },
+    { label: 'Cookie Policy', to: '/cookies' },
+    { label: 'Accessibility', to: '/accessibility' },
+    { label: 'Disclaimer', to: '/disclaimer' },
+  ];
+
+  const legalLinks = [
+    { label: 'Privacy', to: '/privacy' },
+    { label: 'Terms', to: '/terms' },
+    { label: 'Cookies', to: '/cookies' },
+    { label: 'Accessibility', to: '/accessibility' },
+    { label: 'Disclaimer', to: '/disclaimer' },
   ];
 
   return (
@@ -116,13 +126,16 @@ export default function Footer() {
           <p className="font-mono text-[8px] sm:text-[9px] tracking-[0.12em] sm:tracking-[0.15em] text-cream/30 text-center md:text-left">
             © {currentYear} Suraha Enterprise Ltd. All rights reserved. Registered in England & Wales.
           </p>
-          <div className="flex items-center gap-6">
-            <Link to="/privacy" className="font-mono text-[8px] sm:text-[9px] tracking-[0.12em] sm:tracking-[0.15em] text-cream/30 hover:text-cream transition-colors duration-300">
-              Privacy Policy
-            </Link>
-            <Link to="/terms" className="font-mono text-[8px] sm:text-[9px] tracking-[0.12em] sm:tracking-[0.15em] text-cream/30 hover:text-cream transition-colors duration-300">
-              Terms of Use
-            </Link>
+          <div className="flex flex-wrap items-center justify-center md:justify-end gap-x-5 gap-y-2">
+            {legalLinks.map((link) => (
+              <Link
+                key={link.to}
+                to={link.to}
+                className="font-mono text-[8px] sm:text-[9px] tracking-[0.12em] sm:tracking-[0.15em] text-cream/30 hover:text-cream transition-colors duration-300"
+              >
+                {link.label}
+              </Link>
+            ))}
           </div>
         </div>
       </div>

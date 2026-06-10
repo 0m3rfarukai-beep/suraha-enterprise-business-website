@@ -21,6 +21,8 @@ export default function Navbar() {
   }, [mobileOpen]);
 
   useEffect(() => {
+    // Close the mobile menu on route change (covers browser back/forward).
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setMobileOpen(false);
   }, [location.pathname]);
 
@@ -104,7 +106,6 @@ export default function Navbar() {
         className={`lg:hidden overflow-hidden transition-all duration-400 ${
           mobileOpen ? 'max-h-[420px] opacity-100' : 'max-h-0 opacity-0'
         } bg-navy-deep/98 backdrop-blur-md border-t border-gold/10`}
-        role="menu"
       >
         <div className="px-6 py-8 flex flex-col gap-4">
           {navLinks.map((link) => (
@@ -115,7 +116,6 @@ export default function Navbar() {
               className={`font-mono text-[10px] uppercase tracking-[0.2em] transition-colors duration-300 py-0.5 ${
                 isActive(link.to) ? 'text-gold' : 'text-cream/55 hover:text-gold'
               }`}
-              role="menuitem"
             >
               {link.label}
             </Link>
@@ -124,7 +124,6 @@ export default function Navbar() {
             to="/contact"
             onClick={() => setMobileOpen(false)}
             className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold hover:text-gold-light transition-colors duration-300 mt-3 pt-4 border-t border-gold/10"
-            role="menuitem"
           >
             Enquire →
           </Link>
