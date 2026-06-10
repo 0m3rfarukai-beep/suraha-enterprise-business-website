@@ -50,7 +50,7 @@ export default function Accessibility() {
       <section className="bg-navy-deep py-20 md:py-28 lg:py-32 relative">
         <div className="absolute inset-4 sm:inset-8 md:inset-12 lg:inset-16 border border-gold/12 pointer-events-none rounded-[2px]" />
         <div className="max-w-[560px] mx-auto px-6 md:px-12 text-center relative z-10">
-          <p className="font-mono text-[9px] sm:text-[10px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-gold mb-6">
+          <p className="font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-gold mb-6">
             Feedback
           </p>
           <h2 className="font-heading font-light text-[24px] sm:text-[30px] md:text-[36px] text-cream leading-[1.18] mb-5">
@@ -65,7 +65,7 @@ export default function Accessibility() {
           >
             enquiries@surahaenterprise.com
           </a>
-          <p className="font-mono text-[8px] sm:text-[9px] uppercase tracking-[0.15em] text-cream/25 mt-8">
+          <p className="font-mono text-[9px] sm:text-[10px] uppercase tracking-[0.15em] text-cream/25 mt-8">
             Suraha Enterprise Ltd. is registered in England &amp; Wales. · Last updated June 2026
           </p>
         </div>

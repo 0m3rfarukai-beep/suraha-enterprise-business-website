@@ -13,7 +13,7 @@ const principles = [
   {
     number: '02',
     title: 'Disciplined Diversification',
-    body: 'Our four divisions provide structural resilience, but each operates with focused intent. We diversify to protect — never to dilute.',
+    body: 'Our pillars — technology, commerce, and trade — provide structural resilience, but each operates with focused intent. We diversify to protect — never to dilute.',
     extended: 'Every business we enter is chosen because we have genuine conviction in its long-term potential, not because it fills a gap in our portfolio. We would rather have four deeply understood positions than twenty superficial ones. Our diversification is strategic, not decorative.',
     extended2: 'This discipline extends to how we allocate attention and resources within each division. Focus creates depth, and depth creates the kind of commercial insight that drives better decisions over time.',
   },
@@ -27,14 +27,14 @@ const principles = [
 ];
 
 export default function Philosophy() {
-  usePageTitle('Investment Philosophy');
+  usePageTitle('Philosophy');
 
   return (
     <>
       <PageHero
-        eyebrow="Investment Philosophy"
+        eyebrow="Group Philosophy"
         heading={<>Patient capital. <span className="italic text-gold">Permanent</span> interests.</>}
-        subtitle="Our investment philosophy is built on conviction, discipline, and the belief that enduring value is created through patient, purposeful capital deployment."
+        subtitle="Our philosophy is built on conviction, discipline, and the belief that enduring value is created by building businesses patiently and owning them responsibly."
       />
 
       {/* Core Principles */}

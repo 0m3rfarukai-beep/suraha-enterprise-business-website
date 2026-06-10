@@ -26,7 +26,7 @@ const facts = [
   { label: 'Founded', value: 'United Kingdom' },
   { label: 'Structure', value: 'Private Holding Company' },
   { label: 'Jurisdiction', value: 'England & Wales' },
-  { label: 'Divisions', value: 'Four Strategic Verticals' },
+  { label: 'Pillars', value: 'Head Office, Technology, Commerce, Trade' },
   { label: 'Approach', value: 'Patient, Conviction-Led' },
 ];
 
@@ -38,7 +38,7 @@ export default function About() {
       <PageHero
         eyebrow="About Suraha Enterprise"
         heading={<>A British enterprise built on <span className="italic text-gold">conviction</span> and capital discipline.</>}
-        subtitle="Established as a private holding company registered in England & Wales, Suraha Enterprise acquires, builds, and supports businesses across four strategic divisions."
+        subtitle="Established as a private holding company registered in England & Wales, Suraha Enterprise builds and operates businesses across technology, commerce, and international trade."
       />
 
       {/* Company Overview */}
@@ -50,7 +50,7 @@ export default function About() {
           />
           <div className="mt-8 md:mt-10 max-w-[720px] space-y-5">
             <p className="font-body font-light text-[15px] md:text-[16px] leading-[1.7] text-navy/70">
-              Suraha Enterprise Ltd. is a private holding company registered in England & Wales. We acquire, build, and support businesses across four strategic divisions — real estate, technology, investment, and consultancy.
+              Suraha Enterprise Ltd. is a private holding company registered in England & Wales. The group is structured around four commercial pillars — a head office providing strategic direction and governance, and operating divisions in technology, commerce, and international trade.
             </p>
             <p className="font-body font-light text-[15px] md:text-[16px] leading-[1.7] text-navy/70">
               Our structure is deliberate. Each division operates with focused intent, while the group provides strategic oversight, shared resources, and the capital patience that only a privately held enterprise can offer.
@@ -92,13 +92,13 @@ export default function About() {
           <div className="mt-10 md:mt-14 grid grid-cols-1 sm:grid-cols-2 gap-px bg-gold/10 border border-gold/10 rounded-[2px]">
             {values.map((v, i) => (
               <div key={i} className="bg-cream p-8 md:p-10">
-                <p className="font-mono text-[9px] sm:text-[10px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-gold mb-4">
+                <p className="font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-gold mb-4">
                   0{i + 1}
                 </p>
                 <h3 className="font-heading font-light text-[20px] md:text-[22px] text-navy leading-tight mb-3">
                   {v.title}
                 </h3>
-                <p className="font-body font-light text-[13px] md:text-[14px] leading-[1.7] text-navy/55">
+                <p className="font-body font-light text-[14px] md:text-[15px] leading-[1.7] text-navy/55">
                   {v.body}
                 </p>
               </div>
@@ -138,12 +138,12 @@ export default function About() {
                 heading={<>The enterprise in <span className="italic text-gold">summary</span>.</>}
               />
               <p className="font-body font-light text-[15px] md:text-[16px] leading-[1.7] text-navy/70 mt-8 md:mt-10 max-w-[600px]">
-                Suraha Enterprise operates across four divisions, each with distinct expertise and a shared commitment to long-term value creation. Our structure provides both focus and resilience.
+                Suraha Enterprise operates through a group head office and divisions in technology, commerce, and international trade — each with distinct expertise and a shared commitment to long-term value creation. Our structure provides both focus and resilience.
               </p>
               <div className="mt-8">
                 <Link
                   to="/divisions"
-                  className="inline-flex items-center gap-2 font-mono text-[10px] uppercase tracking-[0.2em] text-gold hover:text-gold-light transition-colors duration-300 group"
+                  className="inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.2em] text-gold hover:text-gold-light transition-colors duration-300 group"
                 >
                   Explore Our Divisions
                   <span className="inline-block transition-transform duration-300 group-hover:translate-x-0.5" aria-hidden="true">→</span>
@@ -152,7 +152,7 @@ export default function About() {
             </div>
             <div className="lg:col-span-5">
               <div className="border border-gold/15 p-8 md:p-10 rounded-[2px]">
-                <p className="font-mono text-[9px] sm:text-[10px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-gold mb-8">
+                <p className="font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-gold mb-8">
                   Company Facts
                 </p>
                 <div className="space-y-0">
@@ -163,10 +163,10 @@ export default function About() {
                         i < facts.length - 1 ? 'border-b border-gold/10' : ''
                       }`}
                     >
-                      <span className="font-mono text-[9px] sm:text-[10px] uppercase tracking-[0.15em] sm:tracking-[0.2em] text-navy/45">
+                      <span className="font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.15em] sm:tracking-[0.2em] text-navy/45">
                         {fact.label}
                       </span>
-                      <span className="font-body text-[13px] md:text-[14px] text-navy/70 text-right">
+                      <span className="font-body text-[14px] md:text-[15px] text-navy/70 text-right">
                         {fact.value}
                       </span>
                     </div>

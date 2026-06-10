@@ -1,9 +1,11 @@
+import { motion } from 'framer-motion';
+
 export default function Stats() {
   const stats = [
-    { number: '04', label: 'Active Divisions' },
-    { number: '3+', label: 'Sectors' },
+    { number: '04', label: 'Commercial Pillars' },
+    { number: '03', label: 'Operating Divisions' },
     { number: 'UK', label: 'Registered' },
-    { number: '∞', label: 'Investment Horizon' },
+    { number: '∞', label: 'Long-Term Horizon' },
   ];
 
   return (
@@ -12,17 +14,21 @@ export default function Stats() {
         {/* Grid with gold gap lines */}
         <div className="grid grid-cols-2 md:grid-cols-4 bg-gold/15 gap-px border border-gold/15">
           {stats.map((stat, i) => (
-            <div
+            <motion.div
               key={i}
-              className="group relative py-10 md:py-14 px-4 md:px-8 text-center bg-cream-dark transition-colors duration-300 hover:bg-gold/[0.04]"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: '-60px' }}
+              transition={{ duration: 0.6, delay: i * 0.08, ease: [0.22, 0.61, 0.36, 1] }}
+              className="group relative py-10 md:py-16 px-4 md:px-8 text-center bg-cream-dark transition-colors duration-300 hover:bg-gold/[0.04]"
             >
-              <p className="font-heading font-light text-[44px] md:text-[64px] text-gold leading-none mb-3 relative z-10">
+              <p className="font-heading font-light text-[48px] md:text-[72px] text-gold leading-none mb-3 relative z-10">
                 {stat.number}
               </p>
-              <p className="font-mono text-[8px] sm:text-[9px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-navy/60 relative z-10">
+              <p className="font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-navy/60 relative z-10">
                 {stat.label}
               </p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

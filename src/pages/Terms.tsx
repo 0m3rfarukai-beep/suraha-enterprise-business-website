@@ -40,7 +40,7 @@ export default function Terms() {
               All content on this website — including text, design, logos, and brand marks — is the intellectual property of Suraha Enterprise Ltd. or its licensors. No part of this website may be reproduced, distributed, or transmitted in any form without the prior written consent of Suraha Enterprise Ltd.
             </p>
             <p className="font-body font-light text-[15px] md:text-[16px] leading-relaxed text-navy/70">
-              The Suraha Enterprise name, the Suraha monogram, and the division names (Suraha Properties, Suraha Digital, Suraha Ventures, Suraha Advisory) are proprietary marks of Suraha Enterprise Ltd.
+              The Suraha Enterprise name, the Suraha monogram, and the division names (Suraha Digital, Suraha Commerce, Suraha Trade) are proprietary marks of Suraha Enterprise Ltd.
             </p>
           </div>
         </div>
@@ -101,7 +101,7 @@ export default function Terms() {
       <section className="bg-navy-deep py-24 md:py-32 lg:py-40 relative">
         <div className="absolute inset-4 sm:inset-8 md:inset-12 lg:inset-16 border border-gold/12 pointer-events-none rounded-[2px]" />
         <div className="max-w-[560px] mx-auto px-6 md:px-12 text-center relative z-10">
-          <p className="font-mono text-[9px] sm:text-[10px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-gold mb-6">
+          <p className="font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-gold mb-6">
             Contact
           </p>
           <h2 className="font-heading font-light text-[24px] sm:text-[30px] md:text-[36px] text-cream leading-[1.18] mb-5">
@@ -116,7 +116,7 @@ export default function Terms() {
           >
             enquiries@surahaenterprise.com
           </a>
-          <p className="font-mono text-[8px] sm:text-[9px] uppercase tracking-[0.15em] text-cream/25 mt-8">
+          <p className="font-mono text-[9px] sm:text-[10px] uppercase tracking-[0.15em] text-cream/25 mt-8">
             Suraha Enterprise Ltd. is registered in England &amp; Wales. · Last updated June 2026
           </p>
         </div>

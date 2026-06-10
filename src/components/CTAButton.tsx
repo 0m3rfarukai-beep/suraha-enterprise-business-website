@@ -9,7 +9,7 @@ interface CTAButtonProps {
 }
 
 export default function CTAButton({ href, to, children, variant = 'filled' }: CTAButtonProps) {
-  const base = 'inline-flex items-center justify-center px-9 py-4 font-mono text-[10px] uppercase tracking-[0.2em] transition-colors duration-300 rounded-[2px] group';
+  const base = 'inline-flex items-center justify-center px-10 py-4.5 font-mono text-[11px] uppercase tracking-[0.2em] transition-colors duration-300 rounded-[2px] group';
 
   const style = variant === 'ghost'
     ? 'border border-gold/40 text-gold hover:border-gold hover:bg-gold/5'

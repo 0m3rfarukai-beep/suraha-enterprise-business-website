@@ -65,7 +65,7 @@ export default function Navbar() {
             <Link
               key={link.to}
               to={link.to}
-              className={`font-mono text-[10px] uppercase tracking-[0.16em] xl:tracking-[0.18em] transition-colors duration-300 relative group py-1 ${
+              className={`font-mono text-[11px] uppercase tracking-[0.16em] xl:tracking-[0.18em] transition-colors duration-300 relative group py-1 ${
                 isActive(link.to) ? 'text-gold' : 'text-cream/55 hover:text-gold'
               }`}
             >
@@ -80,7 +80,7 @@ export default function Navbar() {
         {/* CTA */}
         <Link
           to="/contact"
-          className="hidden lg:inline-flex items-center gap-2 font-mono text-[10px] uppercase tracking-[0.2em] text-gold hover:text-gold-light transition-colors duration-300 group shrink-0"
+          className="hidden lg:inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.2em] text-gold hover:text-gold-light transition-colors duration-300 group shrink-0"
         >
           Enquire
           <span className="inline-block transition-transform duration-300 group-hover:translate-x-1" aria-hidden="true">→</span>
@@ -113,7 +113,7 @@ export default function Navbar() {
               key={link.to}
               to={link.to}
               onClick={() => setMobileOpen(false)}
-              className={`font-mono text-[10px] uppercase tracking-[0.2em] transition-colors duration-300 py-0.5 ${
+              className={`font-mono text-[11px] uppercase tracking-[0.2em] transition-colors duration-300 py-0.5 ${
                 isActive(link.to) ? 'text-gold' : 'text-cream/55 hover:text-gold'
               }`}
             >
@@ -123,7 +123,7 @@ export default function Navbar() {
           <Link
             to="/contact"
             onClick={() => setMobileOpen(false)}
-            className="font-mono text-[10px] uppercase tracking-[0.2em] text-gold hover:text-gold-light transition-colors duration-300 mt-3 pt-4 border-t border-gold/10"
+            className="font-mono text-[11px] uppercase tracking-[0.2em] text-gold hover:text-gold-light transition-colors duration-300 mt-3 pt-4 border-t border-gold/10"
           >
             Enquire →
           </Link>

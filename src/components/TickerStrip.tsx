@@ -1,13 +1,13 @@
 export default function TickerStrip() {
   const items = [
     'Suraha Enterprise',
-    'Real Estate',
+    'Head Office',
     'Technology',
-    'Investment',
-    'Consultancy',
+    'Commerce',
+    'International Trade',
     'United Kingdom',
-    'Patient Capital',
     'Long-term Value',
+    'Built to Endure',
   ];
 
   const content = items.map((item, i) => (

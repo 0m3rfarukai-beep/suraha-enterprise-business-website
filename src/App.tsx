@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
+import { MotionConfig } from 'framer-motion';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
@@ -17,6 +18,7 @@ import NotFound from './pages/NotFound';
 
 export default function App() {
   return (
+    <MotionConfig reducedMotion="user">
     <div className="min-h-screen flex flex-col">
       <ScrollToTop />
       <Navbar />
@@ -38,5 +40,6 @@ export default function App() {
       </main>
       <Footer />
     </div>
+    </MotionConfig>
   );
 }

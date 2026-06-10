@@ -13,10 +13,10 @@ export default function Footer() {
   ];
 
   const divisionLinks = [
-    { label: 'Suraha Properties', to: '/divisions' },
+    { label: 'Head Office & Holding', to: '/divisions' },
     { label: 'Suraha Digital', to: '/divisions' },
-    { label: 'Suraha Ventures', to: '/divisions' },
-    { label: 'Suraha Advisory', to: '/divisions' },
+    { label: 'Suraha Commerce', to: '/divisions' },
+    { label: 'Suraha Trade', to: '/divisions' },
   ];
 
   const companyLinks = [
@@ -46,17 +46,17 @@ export default function Footer() {
               Suraha{' '}
               <span className="text-gold italic">Enterprise</span>
             </p>
-            <p className="font-body font-light text-[13px] text-cream/40 leading-relaxed max-w-[240px] mb-4">
+            <p className="font-body font-light text-[14px] text-cream/45 leading-relaxed max-w-[260px] mb-4">
               Building Tomorrow's Businesses Today.
             </p>
-            <p className="font-mono text-[8px] sm:text-[9px] tracking-[0.15em] text-cream/30 leading-relaxed">
+            <p className="font-mono text-[9px] sm:text-[10px] tracking-[0.15em] text-cream/30 leading-relaxed">
               Registered in England & Wales
             </p>
           </div>
 
           {/* Navigation column */}
           <div>
-            <p className="font-mono text-[8px] sm:text-[9px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-gold mb-5">
+            <p className="font-mono text-[9px] sm:text-[10px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-gold mb-5">
               Navigation
             </p>
             <ul className="flex flex-col gap-3">
@@ -64,7 +64,7 @@ export default function Footer() {
                 <li key={link.label}>
                   <Link
                     to={link.to}
-                    className="font-body text-[12px] text-cream/40 hover:text-cream transition-colors duration-300"
+                    className="font-body text-[13px] text-cream/45 hover:text-cream transition-colors duration-300"
                   >
                     {link.label}
                   </Link>
@@ -75,7 +75,7 @@ export default function Footer() {
 
           {/* Divisions column */}
           <div>
-            <p className="font-mono text-[8px] sm:text-[9px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-gold mb-5">
+            <p className="font-mono text-[9px] sm:text-[10px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-gold mb-5">
               Divisions
             </p>
             <ul className="flex flex-col gap-3">
@@ -83,7 +83,7 @@ export default function Footer() {
                 <li key={link.label}>
                   <Link
                     to={link.to}
-                    className="font-body text-[12px] text-cream/40 hover:text-cream transition-colors duration-300"
+                    className="font-body text-[13px] text-cream/45 hover:text-cream transition-colors duration-300"
                   >
                     {link.label}
                   </Link>
@@ -94,7 +94,7 @@ export default function Footer() {
 
           {/* Company / Connect column */}
           <div className="col-span-2 sm:col-span-1">
-            <p className="font-mono text-[8px] sm:text-[9px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-gold mb-5">
+            <p className="font-mono text-[9px] sm:text-[10px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-gold mb-5">
               Company
             </p>
             <ul className="flex flex-col gap-3 mb-8">
@@ -102,19 +102,19 @@ export default function Footer() {
                 <li key={link.label}>
                   <Link
                     to={link.to}
-                    className="font-body text-[12px] text-cream/40 hover:text-cream transition-colors duration-300"
+                    className="font-body text-[13px] text-cream/45 hover:text-cream transition-colors duration-300"
                   >
                     {link.label}
                   </Link>
                 </li>
               ))}
             </ul>
-            <p className="font-mono text-[8px] sm:text-[9px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-gold mb-5">
+            <p className="font-mono text-[9px] sm:text-[10px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-gold mb-5">
               Connect
             </p>
             <a
               href="mailto:enquiries@surahaenterprise.com"
-              className="font-body text-[12px] text-cream/40 hover:text-cream transition-colors duration-300 break-all"
+              className="font-body text-[13px] text-cream/45 hover:text-cream transition-colors duration-300 break-all"
             >
               enquiries@surahaenterprise.com
             </a>
@@ -123,7 +123,7 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="border-t border-gold/10 pt-7 flex flex-col md:flex-row items-center justify-between gap-3">
-          <p className="font-mono text-[8px] sm:text-[9px] tracking-[0.12em] sm:tracking-[0.15em] text-cream/30 text-center md:text-left">
+          <p className="font-mono text-[9px] sm:text-[10px] tracking-[0.12em] sm:tracking-[0.15em] text-cream/30 text-center md:text-left">
             © {currentYear} Suraha Enterprise Ltd. All rights reserved. Registered in England & Wales.
           </p>
           <div className="flex flex-wrap items-center justify-center md:justify-end gap-x-5 gap-y-2">
@@ -131,7 +131,7 @@ export default function Footer() {
               <Link
                 key={link.to}
                 to={link.to}
-                className="font-mono text-[8px] sm:text-[9px] tracking-[0.12em] sm:tracking-[0.15em] text-cream/30 hover:text-cream transition-colors duration-300"
+                className="font-mono text-[9px] sm:text-[10px] tracking-[0.12em] sm:tracking-[0.15em] text-cream/30 hover:text-cream transition-colors duration-300"
               >
                 {link.label}
               </Link>

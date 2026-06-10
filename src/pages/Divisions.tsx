@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import PageHero from '../components/PageHero';
 import SectionHeader from '../components/SectionHeader';
+import Reveal from '../components/Reveal';
 import { usePageTitle } from '../hooks/usePageTitle';
 
 interface DivisionDetail {
@@ -12,44 +13,44 @@ interface DivisionDetail {
 
 const divisions: DivisionDetail[] = [
   {
-    tag: 'Real Estate',
-    name: 'Suraha Properties',
+    tag: 'Head Office',
+    name: 'Suraha Enterprise',
     paragraphs: [
-      'Suraha Properties acquires and manages premium real estate assets across the United Kingdom. Our portfolio spans commercial offices, residential developments, and mixed-use properties in established and emerging markets.',
-      'We take a hands-on approach to asset management — identifying value through operational improvement, repositioning, and patient capital deployment rather than speculative turnover. Every acquisition is evaluated with a long-term perspective, and every asset is managed with the discipline expected of a serious institutional owner.',
-      'Our real estate practice is built on deep market knowledge, conservative financing principles, and a commitment to creating lasting value in the properties we own and the communities they serve.',
+      'At the centre of the group sits Suraha Enterprise Ltd. — the head office and holding company. It owns and directs the operating divisions, sets group strategy, and maintains the governance standards that every part of the enterprise is held to.',
+      'The head office is deliberately lean. Its role is not to duplicate what the divisions do, but to provide what they cannot provide for themselves: long-term direction, capital discipline, shared infrastructure, and a single standard of conduct across the group.',
+      'This structure gives each operating division the freedom to focus entirely on its market, while the group carries responsibility for strategy, compliance, and the patient ownership that allows businesses to be built properly.',
     ],
-    focus: ['Commercial Real Estate', 'Residential Development', 'Asset Management', 'Strategic Repositioning'],
+    focus: ['Group Strategy', 'Governance & Compliance', 'Capital Discipline', 'Shared Services'],
   },
   {
     tag: 'Technology',
     name: 'Suraha Digital',
     paragraphs: [
-      'Suraha Digital builds and invests in technology ventures that address genuine commercial needs. We focus on digital infrastructure, enterprise software, and platforms that improve how businesses operate and scale.',
-      'Our approach favours substance over hype. We back technologies with clear unit economics, defensible positions, and the potential to become essential infrastructure within their markets. We are not interested in vanity metrics or speculative growth — we look for businesses building durable competitive advantages through genuine product value.',
-      'Where we take an active role, we contribute strategic oversight, operational rigour, and access to our broader network of institutional relationships. Our goal is to help technology businesses grow sustainably, not recklessly.',
+      'Suraha Digital is the technology division of the group — delivering IT services, software development, web platforms, and digital infrastructure for the group\'s own ventures and for commercial clients.',
+      'Our approach favours substance over hype. We build systems that are maintainable, secure, and commercially useful — from business websites and eCommerce platforms to automation and bespoke software. We are not interested in technology for its own sake; we are interested in technology that makes businesses measurably better.',
+      'Suraha Digital also serves as the technical backbone of the wider group, building and operating the platforms on which Suraha Commerce and Suraha Trade run.',
     ],
-    focus: ['Digital Infrastructure', 'Enterprise Software', 'SaaS Platforms', 'Technology Ventures'],
+    focus: ['IT & Software Services', 'Web Development', 'Digital Infrastructure', 'Business Automation'],
   },
   {
-    tag: 'Investment',
-    name: 'Suraha Ventures',
+    tag: 'Commerce',
+    name: 'Suraha Commerce',
     paragraphs: [
-      'Suraha Ventures is the investment arm of Suraha Enterprise, deploying patient capital into high-conviction opportunities across sectors and stages. From early-stage ventures with exceptional founders to established businesses seeking a strategic growth partner, we invest where our capital, patience, and operational involvement can meaningfully accelerate long-term value creation.',
-      'We do not follow investment fashions or allocate capital based on sector momentum. Each opportunity is evaluated on its own merits — the quality of the business, the strength of its leadership, and the durability of its competitive position.',
-      'Our investment horizon is deliberately long. We are comfortable with the time it takes to build genuinely valuable businesses, and we structure our commitments accordingly.',
+      'Suraha Commerce is the group\'s online retail and eCommerce division. It develops and operates direct-to-consumer retail channels, online storefronts, and digital trading operations.',
+      'We approach retail with the same discipline we bring to every part of the enterprise: careful product selection, honest customer dealing, and operational rigour in fulfilment and service. We would rather build a small number of trusted retail operations than a large number of forgettable ones.',
+      'The division benefits directly from the group\'s structure — technology from Suraha Digital, supply relationships through Suraha Trade, and the governance standards of the head office.',
     ],
-    focus: ['Growth Equity', 'Venture Investment', 'Strategic Partnerships', 'Patient Capital Deployment'],
+    focus: ['Online Retail', 'eCommerce Operations', 'Direct-to-Consumer', 'Digital Storefronts'],
   },
   {
-    tag: 'Consultancy',
-    name: 'Suraha Advisory',
+    tag: 'Trade',
+    name: 'Suraha Trade',
     paragraphs: [
-      'Suraha Advisory provides institutional-grade strategic counsel to boards, executive teams, and family offices navigating complex commercial decisions. Our advisory practice draws on deep operational experience across our four divisions.',
-      'We advise on capital allocation, organisational design, market entry, and strategic positioning — always with a focus on long-term, sustainable outcomes. Our counsel is direct, considered, and free from the conflicts of interest that affect many advisory practices.',
-      'We do not offer generic frameworks or templated solutions. Every engagement is tailored to the specific circumstances and objectives of our clients, drawing on our direct experience as operators and owners.',
+      'Suraha Trade is the wholesale and international trading division of the group — engaged in import, export, and business-to-business supply across selected product categories.',
+      'Trade is a discipline of relationships and reliability. We build long-term arrangements with suppliers and buyers, founded on consistent quality, honest terms, and dependable delivery. Our UK registration and governance standards give counterparties the confidence of dealing with a properly run British enterprise.',
+      'The division focuses on selected categories where the group has genuine knowledge and dependable supply relationships, and it grows deliberately — one sound trading relationship at a time.',
     ],
-    focus: ['Strategic Counsel', 'Capital Advisory', 'Governance Support', 'Market Strategy'],
+    focus: ['Wholesale Supply', 'Import & Export', 'B2B Distribution', 'International Sourcing'],
   },
 ];
 
@@ -60,8 +61,8 @@ export default function Divisions() {
     <>
       <PageHero
         eyebrow="Our Divisions"
-        heading={<>Four disciplines. One <span className="italic text-gold">enterprise</span>.</>}
-        subtitle="Each division operates with focused intent, supported by the strategic oversight and capital patience of the group."
+        heading={<>Four pillars. One <span className="italic text-gold">enterprise</span>.</>}
+        subtitle="A group head office and three operating divisions — technology, commerce, and trade — each with focused intent, held to a single standard."
       />
 
       {/* Division Sections */}
@@ -74,44 +75,48 @@ export default function Divisions() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16">
               {/* Left — tag + name */}
               <div className="lg:col-span-4">
-                <p className="font-mono text-[9px] sm:text-[10px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-gold mb-3">
-                  {div.tag}
-                </p>
-                <h2 className="font-heading font-light text-[22px] sm:text-[26px] md:text-[32px] text-navy leading-tight">
-                  {div.name}
-                </h2>
+                <Reveal>
+                  <p className="font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-gold mb-3">
+                    {div.tag}
+                  </p>
+                  <h2 className="font-heading font-light text-[26px] sm:text-[30px] md:text-[36px] text-navy leading-tight">
+                    {div.name}
+                  </h2>
+                </Reveal>
               </div>
 
               {/* Right — body + focus + CTA */}
               <div className="lg:col-span-8">
-                <div className="space-y-5 mb-8">
-                  {div.paragraphs.map((p, pi) => (
-                    <p key={pi} className="font-body font-light text-[14px] md:text-[15px] leading-[1.7] text-navy/65">
-                      {p}
-                    </p>
-                  ))}
-                </div>
+                <Reveal delay={0.1}>
+                  <div className="space-y-5 mb-8">
+                    {div.paragraphs.map((p, pi) => (
+                      <p key={pi} className="font-body font-light text-[15px] md:text-[16px] leading-[1.75] text-navy/70">
+                        {p}
+                      </p>
+                    ))}
+                  </div>
 
-                {/* Focus areas */}
-                <div className="flex flex-wrap gap-2 mb-8">
-                  {div.focus.map((item) => (
-                    <span
-                      key={item}
-                      className="inline-block px-3.5 py-1.5 border border-gold/15 font-mono text-[9px] sm:text-[10px] uppercase tracking-[0.15em] sm:tracking-[0.2em] text-navy/50 rounded-[2px]"
-                    >
-                      {item}
-                    </span>
-                  ))}
-                </div>
+                  {/* Focus areas */}
+                  <div className="flex flex-wrap gap-2 mb-8">
+                    {div.focus.map((item) => (
+                      <span
+                        key={item}
+                        className="inline-block px-3.5 py-1.5 border border-gold/20 font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.15em] sm:tracking-[0.2em] text-navy/55 rounded-[2px]"
+                      >
+                        {item}
+                      </span>
+                    ))}
+                  </div>
 
-                {/* Enquire link */}
-                <Link
-                  to="/contact"
-                  className="inline-flex items-center gap-2 font-mono text-[10px] uppercase tracking-[0.2em] text-gold hover:text-gold-light transition-colors duration-300 group"
-                >
-                  Enquire about this division
-                  <span className="inline-block transition-transform duration-300 group-hover:translate-x-0.5" aria-hidden="true">→</span>
-                </Link>
+                  {/* Enquire link */}
+                  <Link
+                    to="/contact"
+                    className="inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.2em] text-gold hover:text-gold-light transition-colors duration-300 group"
+                  >
+                    Enquire about this division
+                    <span className="inline-block transition-transform duration-300 group-hover:translate-x-0.5" aria-hidden="true">→</span>
+                  </Link>
+                </Reveal>
               </div>
             </div>
           </div>
@@ -127,17 +132,19 @@ export default function Divisions() {
             heading={<>How the divisions work <span className="italic text-gold">together</span>.</>}
             dark
           />
-          <div className="mt-8 md:mt-10 max-w-[680px] space-y-5">
-            <p className="font-body font-light text-[15px] md:text-[16px] leading-[1.7] text-cream/55">
-              The four divisions of Suraha Enterprise are not isolated silos. They are complementary capabilities, each reinforcing the others through shared insight, cross-sector perspective, and institutional knowledge.
-            </p>
-            <p className="font-body font-light text-[15px] md:text-[16px] leading-[1.7] text-cream/55">
-              Our real estate practice informs our investment decisions. Our technology ventures benefit from our strategic advisory capabilities. Our consultancy draws on operational experience from every division. And our investment arm identifies opportunities that strengthen the entire group.
-            </p>
-            <p className="font-body font-light text-[15px] md:text-[16px] leading-[1.7] text-cream/55">
-              This integrated approach allows us to see patterns across sectors, identify opportunities others might miss, and provide our portfolio businesses with a depth of support that goes beyond capital alone.
-            </p>
-          </div>
+          <Reveal delay={0.1}>
+            <div className="mt-8 md:mt-10 max-w-[700px] space-y-5">
+              <p className="font-body font-light text-[15px] md:text-[16px] leading-[1.75] text-cream/55">
+                The divisions of Suraha Enterprise are not isolated silos. They are complementary capabilities, each reinforcing the others through shared infrastructure, commercial insight, and institutional knowledge.
+              </p>
+              <p className="font-body font-light text-[15px] md:text-[16px] leading-[1.75] text-cream/55">
+                Suraha Digital builds and maintains the platforms on which the group's commerce operations run. Suraha Trade secures the supply relationships that feed Suraha Commerce. And the head office holds all three to a single standard of governance, capital discipline, and long-term intent.
+              </p>
+              <p className="font-body font-light text-[15px] md:text-[16px] leading-[1.75] text-cream/55">
+                This integrated approach allows us to move quickly without losing coherence — every division strengthens the others, and the group is more resilient than any single line of business could be alone.
+              </p>
+            </div>
+          </Reveal>
         </div>
       </section>
     </>

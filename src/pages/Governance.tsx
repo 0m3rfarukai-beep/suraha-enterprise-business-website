@@ -58,7 +58,7 @@ export default function Governance() {
             </div>
             <div className="lg:col-span-5">
               <div className="border border-gold/15 p-8 md:p-10 rounded-[2px]">
-                <p className="font-mono text-[9px] sm:text-[10px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-gold mb-8">
+                <p className="font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-gold mb-8">
                   Company Details
                 </p>
                 <div className="space-y-0">
@@ -69,17 +69,17 @@ export default function Governance() {
                         i < details.length - 1 ? 'border-b border-gold/10' : ''
                       }`}
                     >
-                      <span className="font-mono text-[9px] sm:text-[10px] uppercase tracking-[0.15em] sm:tracking-[0.2em] text-navy/45">
+                      <span className="font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.15em] sm:tracking-[0.2em] text-navy/45">
                         {d.label}
                       </span>
-                      <span className="font-body text-[13px] md:text-[14px] text-navy/70 text-right">
+                      <span className="font-body text-[14px] md:text-[15px] text-navy/70 text-right">
                         {d.value}
                       </span>
                     </div>
                   ))}
                 </div>
                 <div className="mt-8 pt-6 border-t border-gold/10">
-                  <p className="font-mono text-[8px] sm:text-[9px] uppercase tracking-[0.15em] sm:tracking-[0.2em] text-navy/30 leading-relaxed">
+                  <p className="font-mono text-[9px] sm:text-[10px] uppercase tracking-[0.15em] sm:tracking-[0.2em] text-navy/30 leading-relaxed">
                     Suraha Enterprise Ltd. operates in full compliance with the Companies Act 2006 and all applicable UK regulatory requirements.
                   </p>
                 </div>
@@ -100,7 +100,7 @@ export default function Governance() {
           />
           <div className="mt-8 md:mt-10 max-w-[680px] space-y-5">
             <p className="font-body font-light text-[15px] md:text-[16px] leading-[1.7] text-cream/55">
-              Suraha Enterprise operates as a private holding company with four strategic divisions. Each division maintains operational focus while benefiting from the strategic oversight, shared resources, and capital discipline of the group.
+              Suraha Enterprise operates as a private holding company structured around four commercial pillars — a group head office and operating divisions in technology, commerce, and international trade. Each division maintains operational focus while benefiting from the strategic oversight, shared resources, and capital discipline of the group.
             </p>
             <p className="font-body font-light text-[15px] md:text-[16px] leading-[1.7] text-cream/55">
               Our structure is designed to balance entrepreneurial agility with institutional governance. Divisional leaders have the authority and autonomy to execute within their domains, while the group provides strategic direction, risk management, and capital allocation oversight.
@@ -122,13 +122,13 @@ export default function Governance() {
           <div className="mt-10 md:mt-14 grid grid-cols-1 md:grid-cols-3 gap-px bg-gold/10 border border-gold/10 rounded-[2px]">
             {compliancePrinciples.map((cp, i) => (
               <div key={i} className="bg-cream p-8 md:p-10">
-                <p className="font-mono text-[9px] sm:text-[10px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-gold mb-4">
+                <p className="font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-gold mb-4">
                   0{i + 1}
                 </p>
                 <h3 className="font-heading font-light text-[20px] md:text-[22px] text-navy leading-tight mb-3">
                   {cp.title}
                 </h3>
-                <p className="font-body font-light text-[13px] md:text-[14px] leading-[1.7] text-navy/55">
+                <p className="font-body font-light text-[14px] md:text-[15px] leading-[1.7] text-navy/55">
                   {cp.body}
                 </p>
               </div>

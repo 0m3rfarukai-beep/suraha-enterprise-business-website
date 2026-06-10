@@ -6,28 +6,28 @@ import { usePageTitle } from '../hooks/usePageTitle';
 const enquiryTypes = [
   {
     title: 'Strategic Partnerships',
-    body: 'Co-investment opportunities, joint ventures, and long-term commercial partnerships aligned with our divisional focus.',
+    body: 'Joint ventures and long-term commercial partnerships aligned with the group\'s focus on technology, commerce, and trade.',
   },
   {
     title: 'Division Enquiries',
-    body: 'Propositions relevant to Suraha Properties, Suraha Digital, Suraha Ventures, or Suraha Advisory.',
+    body: 'Propositions relevant to Suraha Digital, Suraha Commerce, or Suraha Trade.',
   },
   {
-    title: 'Investment Discussions',
-    body: 'Businesses seeking patient, conviction-led capital with a long-term orientation and strategic involvement.',
+    title: 'Supplier & Trade Relationships',
+    body: 'Manufacturers, suppliers, and distributors seeking dependable wholesale, import/export, or B2B supply arrangements.',
   },
   {
-    title: 'Advisory Conversations',
-    body: 'Boards, executive teams, and family offices seeking institutional-grade strategic counsel.',
+    title: 'Technology Engagements',
+    body: 'Organisations seeking well-built software, web platforms, or digital infrastructure delivered with commercial discipline.',
   },
 ];
 
 const reviewCriteria = [
-  'Businesses with durable competitive advantages and clear paths to sustainable value creation',
+  'Businesses and partners with durable competitive advantages and clear paths to sustainable value creation',
   'Management teams with demonstrated operational capability and long-term orientation',
   'Sectors where we have existing expertise or a well-reasoned basis for conviction',
-  'Structures that allow for meaningful strategic involvement, not purely passive capital',
-  'Opportunities where patience and discipline can compound returns over time',
+  'Relationships that allow for meaningful collaboration and mutual commercial benefit',
+  'Opportunities where patience and discipline can compound value over time',
 ];
 
 const steps = [
@@ -39,7 +39,7 @@ const steps = [
   {
     number: '02',
     title: 'Preliminary Review',
-    body: 'Our team assesses alignment with our investment criteria and divisional focus areas. Where there is resonance, we proceed to dialogue.',
+    body: 'Our team assesses alignment with our commercial criteria and divisional focus areas. Where there is resonance, we proceed to dialogue.',
   },
   {
     number: '03',
@@ -68,7 +68,7 @@ export default function Contact() {
           />
           <div className="mt-8 md:mt-10 max-w-[680px] space-y-5">
             <p className="font-body font-light text-[15px] md:text-[16px] leading-relaxed text-navy/70">
-              Whether you represent a potential portfolio company, a co-investment opportunity, or a strategic advisory engagement — we are open to considered dialogue.
+              Whether you represent a potential supplier, a technology engagement, a trading relationship, or a long-term commercial partnership — we are open to considered dialogue.
             </p>
             <p className="font-body font-light text-[15px] md:text-[16px] leading-relaxed text-navy/70">
               We review every enquiry personally and respond to every approach, regardless of outcome. We value the time and consideration that goes into a well-crafted approach, and we extend the same courtesy in return.
@@ -87,13 +87,13 @@ export default function Contact() {
           <div className="mt-12 md:mt-16 grid grid-cols-1 sm:grid-cols-2 gap-px bg-gold/10 border border-gold/10 rounded-[2px]">
             {enquiryTypes.map((type, i) => (
               <div key={i} className="bg-cream-dark p-8 md:p-10">
-                <p className="font-mono text-[9px] sm:text-[10px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-gold mb-4">
+                <p className="font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-gold mb-4">
                   0{i + 1}
                 </p>
                 <h3 className="font-heading font-light text-[20px] md:text-[22px] text-navy leading-tight mb-3">
                   {type.title}
                 </h3>
-                <p className="font-body font-light text-[13px] md:text-[14px] leading-relaxed text-navy/55">
+                <p className="font-body font-light text-[14px] md:text-[15px] leading-relaxed text-navy/55">
                   {type.body}
                 </p>
               </div>
@@ -151,7 +151,7 @@ export default function Contact() {
                 <h3 className="font-heading font-light text-[18px] md:text-[20px] text-cream leading-tight mb-3">
                   {step.title}
                 </h3>
-                <p className="font-body font-light text-[13px] md:text-[14px] leading-relaxed text-cream/45">
+                <p className="font-body font-light text-[14px] md:text-[15px] leading-relaxed text-cream/45">
                   {step.body}
                 </p>
               </div>
@@ -165,7 +165,7 @@ export default function Contact() {
         <div className="absolute inset-4 sm:inset-8 md:inset-12 lg:inset-16 border border-gold/12 pointer-events-none rounded-[2px]" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[radial-gradient(ellipse_at_center,_rgba(196,154,56,0.06)_0%,_transparent_70%)] pointer-events-none" />
         <div className="max-w-[600px] mx-auto px-6 md:px-12 text-center relative z-10">
-          <p className="font-mono text-[9px] sm:text-[10px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-gold mb-6">
+          <p className="font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-gold mb-6">
             Get In Touch
           </p>
           <h2 className="font-heading font-light text-[24px] sm:text-[32px] md:text-[40px] lg:text-[46px] text-cream leading-[1.15] mb-5 md:mb-7">
@@ -175,7 +175,7 @@ export default function Contact() {
             Submit a brief overview of your proposition. We review every enquiry personally and respond to every approach.
           </p>
           <CTAButton href="mailto:enquiries@surahaenterprise.com">Send an Enquiry</CTAButton>
-          <p className="font-mono text-[8px] sm:text-[9px] uppercase tracking-[0.15em] sm:tracking-[0.2em] text-cream/25 mt-6">
+          <p className="font-mono text-[9px] sm:text-[10px] uppercase tracking-[0.15em] sm:tracking-[0.2em] text-cream/25 mt-6">
             All enquiries treated in strict confidence
           </p>
         </div>
