@@ -50,6 +50,7 @@ export default function Footer() {
             <p className="font-body text-[14px] text-cream/65 leading-relaxed max-w-[260px] mb-4">
               Building Tomorrow's Businesses Today.
             </p>
+            {/* TODO (before official launch): add the real company registration number and registered office address here and in the bottom bar — see LAUNCH-CHECKLIST.md. Do NOT invent these details. */}
             <p className="font-mono text-[11px] tracking-[0.15em] text-cream/55 leading-relaxed">
               Registered in England & Wales
             </p>

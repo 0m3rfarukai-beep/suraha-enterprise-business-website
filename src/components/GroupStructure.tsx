@@ -37,7 +37,13 @@ const branches: BranchNode[] = [
  */
 export default function GroupStructure() {
   return (
-    <div role="img" aria-label="Group structure diagram: Suraha Enterprise Ltd. is the head office and holding company, with three operating divisions — Suraha Digital for technology, Suraha Commerce for eCommerce, and Suraha Trade for wholesale and international trade.">
+    <div>
+      {/* Screen-reader description of the diagram (links below remain interactive) */}
+      <p className="sr-only">
+        Group structure: Suraha Enterprise Ltd. is the head office and holding company, with three
+        operating divisions — Suraha Digital for technology, Suraha Commerce for eCommerce, and
+        Suraha Trade for wholesale and international trade.
+      </p>
       {/* Head office node */}
       <Reveal>
         <div className="max-w-[420px] mx-auto border border-gold/40 bg-cream rounded-[2px] px-8 py-7 text-center transition-colors duration-300 hover:border-gold/70">
