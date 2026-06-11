@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { Facebook, Linkedin } from 'lucide-react';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -120,6 +121,32 @@ export default function Footer() {
             >
               enquiries@surahaenterprise.com
             </a>
+            <ul className="flex flex-col gap-3 mt-4">
+              <li>
+                <a
+                  href="https://www.facebook.com/SurahaEnterpriseLtd/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Suraha Enterprise on Facebook"
+                  className="inline-flex items-center gap-2.5 font-body text-[14px] text-cream/65 hover:text-cream transition-colors duration-300"
+                >
+                  <Facebook size={15} strokeWidth={1.5} className="text-gold/70 shrink-0" aria-hidden="true" />
+                  Facebook
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/company/surahaenterpriseltd/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Suraha Enterprise on LinkedIn"
+                  className="inline-flex items-center gap-2.5 font-body text-[14px] text-cream/65 hover:text-cream transition-colors duration-300"
+                >
+                  <Linkedin size={15} strokeWidth={1.5} className="text-gold/70 shrink-0" aria-hidden="true" />
+                  LinkedIn
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
 

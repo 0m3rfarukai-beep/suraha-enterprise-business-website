@@ -1,4 +1,4 @@
-import { Handshake, Layers, Truck, Code2 } from 'lucide-react';
+import { Handshake, Layers, Truck, Code2, Facebook, Linkedin } from 'lucide-react';
 import PageHero from '../components/PageHero';
 import SectionHeader from '../components/SectionHeader';
 import CTAButton from '../components/CTAButton';
@@ -188,6 +188,26 @@ export default function Contact() {
           <p className="font-mono text-[11px] uppercase tracking-[0.15em] sm:tracking-[0.2em] text-cream/50 mt-6">
             All enquiries treated in strict confidence
           </p>
+          <div className="flex items-center justify-center gap-6 mt-8">
+            <a
+              href="https://www.facebook.com/SurahaEnterpriseLtd/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Suraha Enterprise on Facebook"
+              className="text-cream/50 hover:text-gold transition-colors duration-300"
+            >
+              <Facebook size={17} strokeWidth={1.5} aria-hidden="true" />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/surahaenterpriseltd/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Suraha Enterprise on LinkedIn"
+              className="text-cream/50 hover:text-gold transition-colors duration-300"
+            >
+              <Linkedin size={17} strokeWidth={1.5} aria-hidden="true" />
+            </a>
+          </div>
         </div>
       </section>
     </>
